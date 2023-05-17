@@ -22,4 +22,5 @@ Route::controller(UserController::class)->group(function(){
     Route::get('/login', 'login');
     Route::post('/login', 'doLogin');
     Route::get('/register', 'register');
+    Route::post('/register', 'doRegister');
 });

@@ -11,7 +11,7 @@
                         <p class="h5">Register Your Account</p>
                     </div>
                     <div class="col-lg-12 text-center mt-3">
-                        <form action="" method="post">
+                        <form action="/register" method="post">
                             @csrf
                             @if (isset($error))
                                 <div class="col-lg-12">
@@ -23,6 +23,17 @@
                                         <div>
                                             {{ $error }}
                                         </div>
+                                    </div>
+                                </div>
+                            @endif
+                            @if (isset($success))
+                                <div class="alert alert-success d-flex align-items-center mx-5" role="alert">
+                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
+                                        aria-label="Success:">
+                                        <use xlink:href="#check-circle-fill" />
+                                    </svg>
+                                    <div>
+                                        {{ $success }}
                                     </div>
                                 </div>
                             @endif
@@ -39,8 +50,8 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <input type="text" class="form-control input-purple" name="" id=""
-                                            placeholder="First Name">
+                                        <input type="text" class="form-control input-purple" name="txtFirstName"
+                                            id="txtFirstName" placeholder="First Name">
                                     </div>
                                     <div class="input-group px-5 py-3">
                                         <div class="input-group-prepend">
@@ -52,8 +63,8 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <input type="tel" class="form-control input-purple" name="" id=""
-                                            placeholder="Phone Number">
+                                        <input type="tel" class="form-control input-purple" name="txtPhoneNumber"
+                                            id="txtPhoneNumber" placeholder="Phone Number">
                                     </div>
                                     <div class="input-group px-5 py-3">
                                         <div class="input-group-prepend">
@@ -65,8 +76,8 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <input type="password" class="form-control input-purple" name="" id=""
-                                            placeholder="Password">
+                                        <input type="password" class="form-control input-purple" name="txtPassword"
+                                            id="txtPassword" placeholder="Password">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -81,8 +92,8 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <input type="text" class="form-control input-purple" name="" id=""
-                                            placeholder="Last Name">
+                                        <input type="text" class="form-control input-purple" name="txtLastName"
+                                            id="txtLastName" placeholder="Last Name">
                                     </div>
                                     <div class="input-group px-5 py-3">
 
@@ -95,8 +106,8 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <input type="email" class="form-control input-purple" name="" id=""
-                                            placeholder="Email Address">
+                                        <input type="email" class="form-control input-purple" name="txtEmailAddress"
+                                            id="txtEmailAddress" placeholder="Email Address">
                                     </div>
                                     <div class="input-group px-5 py-3">
                                         <div class="input-group-prepend">
@@ -108,10 +119,14 @@
                                                 </svg>
                                             </span>
                                         </div>
-                                        <input type="password" class="form-control input-purple" name="" id=""
+                                        <input type="password" class="form-control input-purple"
+                                            name="txtConfirmPassword" id="txtConfirmPassword"
                                             placeholder="Confirm Password">
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-lg-12 text-center mt-3">
+                                <button type="submit" class="btn btn-purple m-1 px-3">Register</button>
                             </div>
                         </form>
                     </div>
