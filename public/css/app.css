@@ -2,6 +2,10 @@
     background-color: #8B478F;
 }
 
+.bg-dark-purple{
+    background-color: #29192A;
+}
+
 .w-40 {
     width: 40% !important;
 }
@@ -67,4 +71,21 @@
 .input-purple:focus {
     border: #8B478F;
     box-shadow: 0 0 0 0.25rem #8B478F;
+}
+
+.navbar-dark {
+    --bs-navbar-color: #fff;
+    --bs-navbar-hover-color: #F89FFF;
+    --bs-navbar-disabled-color: #fff;
+    --bs-navbar-active-color: #F89FFF;
+    --bs-navbar-brand-color: #fff;
+}
+
+.dropdown-menu-dark {
+    --bs-dropdown-color: #fff;
+    --bs-dropdown-bg: #29192A;
+    --bs-dropdown-link-color: #fff;
+    --bs-dropdown-link-hover-color: #F89FFF;
+    --bs-dropdown-link-active-bg: #29192A;
+    --bs-dropdown-link-active-color: #F89FFF;
 }

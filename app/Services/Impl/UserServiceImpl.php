@@ -23,15 +23,16 @@ class UserServiceImpl implements UserService
 
         return false;
 	}
-	public function register (string $email, string $password, string $firstName, string $lastName, string $phoneNumber) : bool {
-
+	public function register (string $email, string $password, string $firstName, string $lastName, string $phoneNumber) : bool
+    {
         $newUser = new User;
         $newUser->email = $email;
-        $newUser->name = $firstName + " " + $lastName;
+        $newUser->first_name = $firstName;
+        $newUser->last_name = $lastName;
         $newUser->password = Hash::make($password);
+        $newUser->phone_number = $phoneNumber;
         $newUser->remember_token = Str::random(10);
         $newUser->save();
-        // $newUser->email = $phoneNumber;
 
         return true;
 	}
