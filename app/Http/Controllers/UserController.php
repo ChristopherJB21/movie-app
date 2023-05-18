@@ -47,4 +47,34 @@ class UserController extends Controller
     {
         return response()->view('user.register');
     }
+
+    public function doRegister(Request $request) : Response|RedirectResponse
+    {
+        $email = $request->input('txtEmail');
+        $password = $request->input('txtPassword');
+        $firstName = $request->input('txtFirstName');
+        $lastName = $request->input('txtLastName');
+        $phoneNumber = $request->input('txtPhoneNumber');
+        $confirmPassword = $request->input('txtConfirmPassword');
+
+        if (empty($email) || empty($password) || empty($firstName) || empty($lastName) || empty($phoneNumber) || empty($confirmPassword)) {
+            return response()->view('user.register', [
+                'error' => 'Email and Password are required',
+            ]);
+        } else if ($confirmPassword != $password){
+            return response()->view('user.register', [
+                'error' => 'Password and confirm password must same',
+            ]);
+        }
+
+        if ($this->userService->register($email, $password, $firstName, $lastName, $phoneNumber)) {
+            return response()->view('user.register', [
+                'success' => 'Login Success',
+            ]);
+        }
+
+        return response()->view('user.register', [
+            'error' => 'Register failed',
+        ]);
+    }
 }
