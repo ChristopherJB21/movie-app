@@ -1,32 +1,32 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Seeders;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Models\User;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
- */
-class UserFactory extends Factory
+class UserSeeder extends Seeder
 {
     /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
+     * Run the database seeds.
      */
-    public function definition(): array
+    public function run(): void
     {
-        return [
+        DB::table('ms_users')->insert([
             'id' => fake()->uuid(),
             'first_name' => fake()->name(),
             'last_name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'phone_number' => fake()->phoneNumber(),
-            'role_id' => 1,
+            'role_id' => 2,
             'password' => Hash::make("password"), // password
             'remember_token' => Str::random(10),
-        ];
+        ]);
+
+        User::factory(10)->create();
     }
 }

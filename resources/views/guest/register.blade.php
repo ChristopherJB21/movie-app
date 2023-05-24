@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.app.default')
 @section('content')
     <div class="d-flex flex-column min-vh-100 justify-content-center">
         <div class="container">
             <div class="col-lg-12 bg-white rounded">
                 <div class="col-lg-12">
                     <div class="col-lg-12 p-3 text-center">
-                        <img src="images/Logo.svg">
+                        <a href={{ url('/') }}><img src="images/Logo.svg"></a>
                     </div>
                     <div class="col-lg-12 text-center">
                         <p class="h5">Register Your Account</p>
@@ -131,7 +131,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-12 text-center my-3">
-                                    <a href={{url('/login')}}><button type="button" class="btn btn-purple m-1 px-4">Back to login</button></a>
+                                    <a href={{ url('/login') }}><button type="button"
+                                            class="btn btn-purple m-1 px-4">Back to login</button></a>
                                     <button type="submit" class="btn btn-purple m-1 px-5">Register</button>
                                 </div>
                             </div>

@@ -11,14 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ms_users', function (Blueprint $table) {
-            $table->uuid('id')->primary();
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('email')->unique();
-            $table->string('phone_number');
-            $table->string('password');
-            $table->rememberToken();
+        Schema::create('lt_roles', function (Blueprint $table) {
+            $table->id();
+            $table->string('role')->unique();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -29,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ms_users');
+        Schema::dropIfExists('lt_roles');
     }
 };
