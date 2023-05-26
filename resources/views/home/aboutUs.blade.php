@@ -27,7 +27,7 @@
   </div>
 </div>
 
-<div class="row  justify-content-center">
+<div class="row justify-content-center m-0 p-0">
     <p class=" col-8  text-justify" style="text-align: justify; text-justify: inter-word;">
     Selamat datang di Movie App, destinasi online terbaik untuk pembelian tiket aplikasi. Kami adalah platform inovatif yang didedikasikan untuk memudahkan Anda dalam membeli tiket untuk berbagai acara dan hiburan di seluruh dunia.
     <br>
@@ -44,7 +44,7 @@
     Kami sangat menghargai umpan balik dan masukan dari pelanggan kami. Tim dukungan pelanggan kami tersedia untuk membantu menjawab pertanyaan Anda, menyelesaikan masalah, atau memberikan saran sepanjang waktu. Kepuasan Anda adalah prioritas kami, dan kami berusaha untuk terus meningkatkan layanan kami.
     <br>
     <br>
-    Terima kasih telah memilih [Nama Website] sebagai mitra pembelian tiket Anda. Kami berharap Anda menemukan pengalaman yang menyenangkan dan tak terlupakan di acara yang Anda pilih. Jika Anda memiliki pertanyaan lebih lanjut atau membutuhkan bantuan, jangan ragu untuk menghubungi kami.
+    Terima kasih telah memilih Movie App sebagai mitra pembelian tiket Anda. Kami berharap Anda menemukan pengalaman yang menyenangkan dan tak terlupakan di acara yang Anda pilih. Jika Anda memiliki pertanyaan lebih lanjut atau membutuhkan bantuan, jangan ragu untuk menghubungi kami.
     </p>
     
 </div>
