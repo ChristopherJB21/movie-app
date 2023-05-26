@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('phone_number');
+            $table->unsignedBigInteger('role_id');
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
