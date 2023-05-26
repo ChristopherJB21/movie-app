@@ -20,7 +20,7 @@ class UserController extends Controller
 
     public function login() : Response
     {
-        return response()->view('guest.login');
+        return response()->view('user.login');
     }
 
     public function doLogin(LoginRequest $request) : Response|RedirectResponse
@@ -38,14 +38,14 @@ class UserController extends Controller
             return redirect('/');
         }
 
-        return response()->view('guest.login', [
+        return response()->view('user.login', [
             'error' => 'Email or password is wrong'
         ]);
     }
 
     public function register() : Response
     {
-        return response()->view('guest.register');
+        return response()->view('user.register');
     }
 
     public function doRegister(RegisterRequest $request) : Response|RedirectResponse
@@ -66,12 +66,12 @@ class UserController extends Controller
         $password = $request->input('txtPassword');
 
         if ($this->userService->register($email, $password, $firstName, $lastName, $phoneNumber)) {
-            return response()->view('guest.register', [
+            return response()->view('user.register', [
                 'success' => 'Register Success',
             ]);
         }
 
-        return response()->view('guest.register', [
+        return response()->view('user.register', [
             'error' => 'Register failed',
         ]);
     }

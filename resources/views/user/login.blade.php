@@ -1,4 +1,4 @@
-@extends('layouts.app.default')
+@extends('layouts.master')
 @section('content')
     <div class="d-flex flex-column min-vh-100 justify-content-center">
         <div class="container">

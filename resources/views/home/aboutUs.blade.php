@@ -1,3 +1,3 @@
-@extends('layouts.app.member')
+@extends('layouts.app')
 @section('content')
 @endsection

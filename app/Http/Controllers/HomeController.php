@@ -2,19 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class HomeController extends Controller
 {
-    public function dashboard(Request $request)
+    public function dashboard() : Response
     {
-        if ($request->session()->has('user'))
-        {
-            return response()->view('member.dashboard');
-        } 
-        else
-        {
-            return response()->view('guest.dashboard');
-        }
+        return response()->view('home.dashboard');
+    }
+
+    public function contactUs() : Response
+    {
+        return response()->view('home.contactUs');
+    }
+    
+    public function aboutUs() : Response
+    {
+        return response()->view('home.aboutUs');
     }
 }

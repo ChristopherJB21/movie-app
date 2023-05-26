@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Services\Impl;
+use App\Models\UserRole;
 use App\Services\UserService;
 use App\Models\User;
 use Illuminate\Support\Facades\Crypt;
@@ -45,5 +46,21 @@ class UserServiceImpl implements UserService
         $encryptedIDUser = Crypt::encryptString($user->id);
 
         return $encryptedIDUser;
+    }
+
+    public function getUserRole() : string
+    {
+        $userId = session()->get('user','');
+
+        if ($userId != ''){
+            $userId = Crypt::decryptString($userId);
+            $user = User::where('id', $userId)->first();
+            $roleId = $user->role_id;
+            $role = UserRole::where('id', $roleId)->first();
+
+            return $role->role;
+        }
+
+        return 'Guest';
     }
 }

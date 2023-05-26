@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(HomeController::class)->group(function(){
     Route::get('/', 'dashboard');
+    Route::get('/about/contactUs', 'contactUs');
+    Route::get('/about/aboutUs', 'aboutUs');
 });
 
 Route::controller(UserController::class)->group(function(){
