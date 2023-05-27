@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function(){
-    return view('welcome');
+Route::controller(HomeController::class)->group(function(){
+    Route::get('/', 'dashboard');
+    Route::get('/about/contactUs', 'contactUs');
+    Route::get('/about/aboutUs', 'aboutUs');
 });
 
 Route::controller(UserController::class)->group(function(){
@@ -23,5 +26,5 @@ Route::controller(UserController::class)->group(function(){
     Route::post('/login', 'doLogin');
     Route::get('/register', 'register');
     Route::post('/register', 'doRegister');
-    Route::get('/josua', '');
+    Route::get('/logout', 'doLogout');
 });

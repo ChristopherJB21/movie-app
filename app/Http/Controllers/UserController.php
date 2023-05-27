@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Http\Requests\LoginRequest;
+use App\Http\Requests\RegisterRequest;
 use App\Services\UserService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -22,24 +23,23 @@ class UserController extends Controller
         return response()->view('user.login');
     }
 
-    public function doLogin(Request $request) : Response|RedirectResponse
+    public function doLogin(LoginRequest $request) : Response|RedirectResponse
     {
-        $email = $request->input('txtEmail');
+        $validated = $request->validated();
+
+        $txtEmailAddress = $request->old('txtEmailAddress');
+
+        $email = $request->input('txtEmailAddress');
         $password = $request->input('txtPassword');
 
-        if (empty($email) || empty($password)) {
-            return response()->view('user.login', [
-                'error' => 'Email and Password are required',
-            ]);
-        }
-
         if ($this->userService->login($email, $password)) {
-            $request->session()->put('email', $email);
-            return redirect('/login');
+            $idUser = $this->userService->getIDUserByEmail($email);
+            $request->session()->put('user', $idUser);
+            return redirect('/');
         }
 
         return response()->view('user.login', [
-            'error' => 'Email or Password is wrong',
+            'error' => 'Email or password is wrong'
         ]);
     }
 
@@ -48,33 +48,39 @@ class UserController extends Controller
         return response()->view('user.register');
     }
 
-    public function doRegister(Request $request) : Response|RedirectResponse
+    public function doRegister(RegisterRequest $request) : Response|RedirectResponse
     {
-        $email = $request->input('txtEmail');
-        $password = $request->input('txtPassword');
+        $validated = $request->validated();
+        
+        $validated = $request->safe()->except(['txtPassword', 'txtConfirmPassword']);
+
+        $txtFirstName = $request->old('txtFirstName');
+        $txtLastName = $request->old('txtLastName');
+        $txtEmailAddress = $request->old('txtEmailAddress');
+        $txtPhoneNumber = $request->old('txtPhoneNumber');
+
         $firstName = $request->input('txtFirstName');
         $lastName = $request->input('txtLastName');
+        $email = $request->input('txtEmailAddress');
         $phoneNumber = $request->input('txtPhoneNumber');
-        $confirmPassword = $request->input('txtConfirmPassword');
-
-        if (empty($email) || empty($password) || empty($firstName) || empty($lastName) || empty($phoneNumber) || empty($confirmPassword)) {
-            return response()->view('user.register', [
-                'error' => 'Email and Password are required',
-            ]);
-        } else if ($confirmPassword != $password){
-            return response()->view('user.register', [
-                'error' => 'Password and confirm password must same',
-            ]);
-        }
+        $password = $request->input('txtPassword');
 
         if ($this->userService->register($email, $password, $firstName, $lastName, $phoneNumber)) {
             return response()->view('user.register', [
-                'success' => 'Login Success',
+                'success' => 'Register Success',
             ]);
         }
 
         return response()->view('user.register', [
             'error' => 'Register failed',
         ]);
+    }
+
+    public function doLogout (Request $request) : RedirectResponse
+    {
+        $request->session()->invalidate();
+        $request->session()->regenerate();
+        
+        return redirect('/');
     }
 }
