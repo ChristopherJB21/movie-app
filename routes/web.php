@@ -19,6 +19,8 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/', 'dashboard');
     Route::get('/about/contactUs', 'contactUs');
     Route::get('/about/aboutUs', 'aboutUs');
+    Route::get('/profile', 'profile');
+    Route::put('/profile', 'doUpdateProfile');
 });
 
 Route::controller(UserController::class)->group(function(){

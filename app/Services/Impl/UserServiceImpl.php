@@ -63,4 +63,17 @@ class UserServiceImpl implements UserService
 
         return 'Guest';
     }
+
+    public function getUserProfile() : User
+    {
+        $user = new User;
+        $userId = session()->get('user','');
+
+        if ($userId != ''){
+            $userId = Crypt::decryptString($userId);
+            $user = User::where('id', $userId)->first();
+        }
+
+        return $user;
+    }
 }
