@@ -12,10 +12,10 @@
         </div>
     </div>
 
-    <div class="border-top border-dark container">
+    <div class="my-3 container bg-white rounded-4" style="--bs-bg-opacity: .7;">
         <div class="row">
-            <div class="my-3 col-lg-3">
-                <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="ms-2 img-fluid"
+            <div class="my-3 col-lg-3 align-items-lg-center">
+                <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="mx-auto img-fluid d-block"
                     alt="Responsive image">
             </div>
             <div class="my-3 col-lg-6">
@@ -26,19 +26,21 @@
                     cumque quasi?
                 </p>
             </div>
-            <div class="mt-3 col-lg-3">
+            <div class="my-3 col-lg ">
+                <h4>Tanggal Tayang: </h4>
                 <p>14, Maret 2023</p>
+                <h4>Harga: </h4>
                 <p>Rp. 170.000</p>
                 <div class="row justify-content-md-center">
-                    <button type="button" class="col-lg-6 btn btn-outline-dark">Buy</button>
-                </div>
+                    <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
+                </div> 
             </div>
         </div>
     </div>
-    <div class="border-top border-dark container">
+    <div class="my-3 container bg-white rounded-4" style="--bs-bg-opacity: .7;">
         <div class="row">
             <div class="my-3 col-lg-3">
-                <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="ms-2 img-fluid"
+                <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="mx-auto img-fluid d-block"
                     alt="Responsive image">
             </div>
             <div class="my-3 col-lg-6">
@@ -50,10 +52,12 @@
                 </p>
             </div>
             <div class="mt-3 col-lg-3">
+                <h4>Tanggal Tayang: </h4>
                 <p>14, Maret 2023</p>
+                <h4>Harga: </h4>
                 <p>Rp. 170.000</p>
                 <div class="row justify-content-md-center">
-                    <button type="button" class="col-lg-6 btn btn-outline-dark">Buy</button>
+                    <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
                 </div>
             </div>
         </div>
