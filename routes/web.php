@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MovieController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,4 +28,8 @@ Route::controller(UserController::class)->group(function(){
     Route::get('/register', 'register');
     Route::post('/register', 'doRegister');
     Route::get('/logout', 'doLogout');
+});
+
+Route::controller(MovieController::class)->group(function(){
+    Route::get('/movie', 'movie');
 });
