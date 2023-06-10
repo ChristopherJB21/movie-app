@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Services;
+use App\Models\User;
 
 interface UserService
 {
@@ -8,4 +9,5 @@ interface UserService
     function register (string $email, string $password, string $firstName, string $lastName, string $phoneNumber) : bool;
     function getIDUserByEmail (string $email) : string;
     function getUserRole () : string;
+    function getUserProfile() : User;
 }

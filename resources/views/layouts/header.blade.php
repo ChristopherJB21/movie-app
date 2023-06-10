@@ -12,7 +12,8 @@
                         href={{ url('/') }}>Home</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" aria-current="page" href="#">Movies</a>
+                    <a class="nav-link {{ request()->segment(1) == 'movie' ? 'active' : '' }}" aria-current="page"
+                        href={{ url('/movie') }}>Movies</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" aria-current="page" href="#">Cinemas</a>
