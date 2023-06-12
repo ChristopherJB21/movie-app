@@ -35,3 +35,7 @@ Route::controller(UserController::class)->group(function(){
 Route::controller(MovieController::class)->group(function(){
     Route::get('/movie', 'movie');
 });
+
+Route::controller(CinemasController::class)->group(function(){
+    Route::get('/cinemas', 'cinemas'); 
+});
