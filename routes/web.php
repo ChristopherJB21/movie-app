@@ -34,6 +34,7 @@ Route::controller(UserController::class)->group(function(){
 
 Route::controller(MovieController::class)->group(function(){
     Route::get('/movie', 'movie');
+    Route::post('/movie/search', 'searchMovie');
 });
 
 Route::controller(CinemasController::class)->group(function(){

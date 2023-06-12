@@ -170,6 +170,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\UserServiceProvider::class,
         App\Providers\ViewServiceProvider::class,
+        App\Providers\MovieServiceProvider::class,
     ])->toArray(),
 
     /*
