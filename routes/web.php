@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\CinemasController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
