@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <div class="d-flex mt-3 justify-content-sm-center">
-        <h1>Add Movie</h1>
+    <div class="m-3 d-flex justify-content-sm-center bg-light rounded-4" style="--bs-bg-opacity: .7;">
+        <h3 class="mb-0 py-1">Add Movie</h3>
     </div>
     <form class="m-3">
         <div class="row">
@@ -42,5 +42,7 @@
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
         </div>
         <button type="submit" class="mt-3 btn btn-purple">Add Movie</button>
+        <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-3 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Delete Movie</a>
+        <a href={{ url('/movie') }} type="button" class="mt-3 btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a>
     </form>
 @endsection

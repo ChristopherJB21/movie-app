@@ -11,6 +11,12 @@
                 aria-describedby="search-addon" />
         </div>
     </div>
+    <div class="mx-4 my-3 row justify-content-md-center">
+        <a href={{ url('/movie/addMovie') }} type="button" class="btn btn-purple {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Add Movie</a>
+    </div>
+    <div class="mx-4 my-3 row justify-content-md-center">
+        <a href={{ url('/movie') }} type="button" class="btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a>
+    </div>
     <div class="mx-3 alert alert-light" role="alert">
         <div class="row"> 
             <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class=" img-fluid d-block"alt="Responsive image" style="width: 10%">
