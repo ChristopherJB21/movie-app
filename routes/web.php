@@ -33,6 +33,10 @@ Route::controller(UserController::class)->group(function(){
 
 Route::controller(MovieController::class)->group(function(){
     Route::get('/movie', 'movie');
+    Route::get('/movie/addMovie', 'addmovie');
+    Route::get('/movie/editMovie', 'editmovie');
+    Route::get('/movie/deleteMovie', 'deletemovie');
+
 });
 
 Route::controller(CinemasController::class)->group(function(){
