@@ -16,6 +16,10 @@
         </form>
     </div>
 
+    <div class="mx-4 row justify-content-md-center">
+        <a href={{ url('/movie/addMovie') }} type="button"
+            class="btn btn-purple {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Add Movie</a>
+    </div>
     <div id="listMovie">
         @if (isset($movies[0]))
             @foreach ($movies as $movie)
@@ -45,9 +49,35 @@
         @else
             <h1>Josua</h1>
         @endif
-    </div>
-    
-    {{-- <div class="my-3 container bg-white rounded-4" style="--bs-bg-opacity: .7;">
+        {{-- <div class="my-3 container bg-white rounded-4" style="--bs-bg-opacity: .7;">
+        <div class="row">
+            <div class="my-3 col-lg-3 align-items-lg-center">
+                <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="mx-auto img-fluid d-block"
+                    alt="Responsive image">
+            </div>
+            <div class="my-3 col-lg-6">
+                <h1>Avenger Endgame</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eligendi id eos? Debitis iusto minus
+                    in voluptatem, reprehenderit nihil saepe repellendus perspiciatis animi quod magnam ducimus qui, harum
+                    cumque quasi?
+                </p>
+            </div>
+            <div class="my-3 col-lg ">
+                <h4>Tanggal Tayang: </h4>
+                <p>14, Maret 2023</p>
+                <h4>Harga: </h4>
+                <p>Rp. 170.000</p>
+                <div class="row justify-content-md-center">
+                    <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
+                    <a href={{ url('/movie/editMovie') }} type="button" class="mt-2 col-lg-5 btn btn-primary {{ request()->segment(2) == 'movie' ? 'active' : '' }}" style="border-radius: 0">Edit</a>
+                    <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-2 col-lg-5 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}" style="border-radius: 0">Delete</a>
+                </div> 
+            </div>
+        </div>
+    </div> --}}
+
+        {{-- <div class="my-3 container bg-white rounded-4" style="--bs-bg-opacity: .7;">
         <div class="row">
             <div class="my-3 col-lg-3">
                 <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="mx-auto img-fluid d-block"
@@ -68,9 +98,11 @@
                 <p>Rp. 170.000</p>
                 <div class="row justify-content-md-center">
                     <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
+                    <a href={{ url('/movie/editMovie') }} type="button" class="mt-2 col-lg-5 btn btn-primary {{ request()->segment(2) == 'movie' ? 'active' : '' }}" style="border-radius: 0">Edit</a>
+                    <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-2 col-lg-5 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}" style="border-radius: 0">Delete</a>
                 </div>
             </div>
         </div>
     </div> --}}
-    <script type="text/javascript" src="{{ asset('js/searchMovie.js') }}"></script>
-@endsection
+        <script type="text/javascript" src="{{ asset('js/searchMovie.js') }}"></script>
+    @endsection

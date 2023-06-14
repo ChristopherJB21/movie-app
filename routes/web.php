@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\CinemasController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,6 +36,9 @@ Route::controller(UserController::class)->group(function(){
 Route::controller(MovieController::class)->group(function(){
     Route::get('/movie', 'movie');
     Route::post('/movie/search', 'searchMovie');
+    Route::get('/movie/addMovie', 'addmovie');
+    Route::get('/movie/editMovie', 'editmovie');
+    Route::get('/movie/deleteMovie', 'deletemovie');
 });
 
 Route::controller(CinemasController::class)->group(function(){

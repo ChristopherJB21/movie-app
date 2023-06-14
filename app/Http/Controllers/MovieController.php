@@ -60,4 +60,16 @@ class MovieController extends Controller
 
         return Response($output);
     }
+    public function addMovie() : Response
+    {
+        return response()->view('movie.addMovie');
+    }
+    public function editMovie() : Response
+    {
+        return response()->view('movie.editMovie');
+    }
+    public function deleteMovie() : Response
+    {
+        return response()->view('movie.deleteMovie');
+    }
 }
