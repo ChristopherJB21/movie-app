@@ -37,6 +37,8 @@ Route::controller(MovieController::class)->group(function(){
     Route::get('/movie/editMovie', 'editmovie');
     Route::get('/movie/deleteMovie', 'deletemovie');
     Route::get('/movie/buyMovie', 'buymovie');
+    Route::get('/movie/tickets', 'tickets');
+    Route::get('/movie/buyMovie/payment', 'payment');
 
 });
 

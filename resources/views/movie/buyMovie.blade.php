@@ -211,7 +211,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <button type="submit" class="m-2 btn btn-purple">Buy Movie</button>
+                <a href={{ url('/movie/buyMovie/payment') }} type="submit" class="m-2 btn btn-purple {{ request()->segment(3) == 'movie' ? 'active' : '' }}">Buy Movie</a>
                 <a href={{ url('/movie/deleteMovie') }} type="button" class="m-2 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Delete Movie</a>
                 <a href={{ url('/movie') }} type="button" class="m-2 btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a>
             </div>

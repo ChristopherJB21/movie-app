@@ -11,9 +11,15 @@
                 aria-describedby="search-addon" />
         </div>
     </div>
-    <div class="mx-4 row justify-content-md-center">
+
+    <div class="mx-4 my-2 row justify-content-md-center">
+        <a href={{ url('/movie/tickets') }} type="button" class="btn btn-secondary {{ request()->segment(2) == 'movie' ? 'active' : '' }}">My Tickets</a>
+    </div>
+
+    <div class="mx-4 my-2 row justify-content-md-center">
         <a href={{ url('/movie/addMovie') }} type="button" class="btn btn-purple {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Add Movie</a>
     </div>
+    
     <div class="my-3 container bg-white rounded-4" style="--bs-bg-opacity: .7;">
         <div class="row">
             <div class="my-3 col-lg-3 align-items-lg-center">
@@ -41,6 +47,7 @@
             </div>
         </div>
     </div>
+    
     <div class="my-3 container bg-white rounded-4" style="--bs-bg-opacity: .7;">
         <div class="row">
             <div class="my-3 col-lg-3">
