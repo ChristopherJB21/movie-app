@@ -3,13 +3,13 @@
     <div class="m-3 d-flex justify-content-sm-center bg-light rounded-4" style="--bs-bg-opacity: .7;">
         <h3 class="mb-0 py-1">Add Movie</h3>
     </div>
-    <form class="m-3 bg-white p-4" action="/movie/addMovie" method="post" enctype="multipart/form-data">
+    <form action="/movie/addMovie" method="post" enctype="multipart/form-data" class="m-3 bg-white p-4">
         @csrf
         <div class="row">
             <div class="col-lg-12">
                 <label for="txtMovieName">Movie Name</label>
-                <input type="text" class="form-control @error('txtMovieName') is-invalid @enderror"
-                    id="txtMovieName" name="txtMovieName" placeholder="Movie Name..." value="{{ old('txtMovieName') }}">
+                <input type="text" class="form-control @error('txtMovieName') is-invalid @enderror" id="txtMovieName"
+                    name="txtMovieName" placeholder="Movie Name..." value="{{ old('txtMovieName') }}">
 
                 <div class="invalid-feedback">
                     @error('txtMovieName')
@@ -24,9 +24,8 @@
         </div>
         <div class="form-group">
             <label for="txtMovieSinopsis">Movie Sinopsis</label>
-            <textarea type="text" class="form-control @error('txtMovieSinopsis') is-invalid @enderror"
-                id="txtMovieSinopsis" name="txtMovieSinopsis" placeholder="Sinopsis"
-                value="{{ old('txtMovieSinopsis') }}"></textarea>
+            <textarea type="text" class="form-control @error('txtMovieSinopsis') is-invalid @enderror" id="txtMovieSinopsis"
+                name="txtMovieSinopsis" placeholder="Sinopsis" value="{{ old('txtMovieSinopsis') }}"></textarea>
 
             <div class="invalid-feedback">
                 @error('txtMovieSinopsis')
@@ -56,7 +55,7 @@
         <div class="mt-3">
             <label for="fileMoviePoster">Thumbnail Picture</label>
             <input type="file" class="form-control-file @error('fileMoviePoster') is-invalid @enderror"
-            id="fileMoviePoster" id="fileMoviePoster">
+                id="fileMoviePoster" id="fileMoviePoster">
 
             <div class="invalid-feedback">
                 @error('fileMoviePoster')

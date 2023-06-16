@@ -25,7 +25,8 @@ class MovieRequest extends FormRequest
     {
         return [
             'txtMovieName' => 'required|max:255',
-            'txtMovieSinopsis' => 'required'
+            'txtMovieSinopsis' => 'required',
+            // 'fileMoviePoster' => 'required|image'
         ];
     }
 }

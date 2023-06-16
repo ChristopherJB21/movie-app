@@ -69,17 +69,32 @@ class MovieController extends Controller
 
     public function insertmovie(MovieRequest $request) : Response
     {
+        if ($request->hasFile('fileMoviePoster')){
+            $movies = $this->movieService->getListMovieByTitle('');
+
+            return response()->view('movie.movieManagement', [
+                'movies' => $movies,
+            ]);
+        } else {
+            $movies = $this->movieService->getListMovieByTitle('');
+
+            return response()->view('movie.movieManagement', [
+                'movies' => $movies,
+            ]);
+
+        }
+
         $validated = $request->validated();
         
         // $validated = $request->safe();
 
         $txtMovieName = $request->old('txtMovieName');
         $txtMovieSinopsis = $request->old('txtMovieSinopsis');
-        $fileMoviePoster = $request->old('fileMoviePoster');
+        // $fileMoviePoster = $request->old('fileMoviePoster');
 
         $MovieName = $request->input('txtMovieName');
         $MovieSinopsis = $request->input('txtMovieSinopsis');
-        $MoviePoster = $request->file('fileMoviePoster');
+        $MoviePoster = $request->file();
         
         $DirUpload = "images/moviePoster";
 
