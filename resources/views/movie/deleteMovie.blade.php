@@ -19,7 +19,7 @@
     </div>
     <div class="mx-3 alert alert-light" role="alert">
         <div class="row"> 
-            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class=" img-fluid d-block"alt="Responsive image" style="width: 10%">
+            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="img-fluid" alt="Responsive image" style="width: auto">
             <div class="my-3 col-lg-6">
                 <h1>Avenger Endgame</h1>
                 <p>
@@ -36,7 +36,7 @@
     </div>
     <div class="mx-3 alert alert-light" role="alert">
         <div class="row"> 
-            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class=" img-fluid d-block"alt="Responsive image" style="width: 10%">
+            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class=" img-fluid"alt="Responsive image" style="width: auto">
             <div class="my-3 col-lg-6">
                 <h1>Avenger Endgame</h1>
                 <p>

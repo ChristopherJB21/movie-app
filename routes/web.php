@@ -40,6 +40,9 @@ Route::controller(MovieController::class)->group(function(){
     Route::post('/movie/addMovie', 'insertmovie');
     Route::get('/movie/editMovie', 'editmovie');
     Route::get('/movie/deleteMovie', 'deletemovie');
+    Route::get('/movie/buyMovie', 'buymovie');
+    Route::get('/movie/tickets', 'tickets');
+    Route::get('/movie/buyMovie/payment', 'payment');
 });
 
 Route::controller(CinemasController::class)->group(function(){

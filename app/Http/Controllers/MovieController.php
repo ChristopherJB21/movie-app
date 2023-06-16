@@ -109,4 +109,16 @@ class MovieController extends Controller
     {
         return response()->view('movie.deleteMovie');
     }
+    public function buyMovie() : Response
+    {
+        return response()->view('movie.buyMovie');
+    }
+    public function payment() : Response
+    {
+        return response()->view('movie.payment');
+    }
+    public function tickets() : Response
+    {
+        return response()->view('movie.tickets');
+    }
 }
