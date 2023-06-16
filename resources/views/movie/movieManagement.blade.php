@@ -34,7 +34,7 @@
                 <h4>Harga: </h4>
                 <p>Rp. 170.000</p>
                 <div class="row justify-content-md-center">
-                    <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
+                    <a href={{ url('/movie/buyMovie') }} type="button" class="col-lg-10 btn btn-outline-dark {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Buy</a>
                     <a href={{ url('/movie/editMovie') }} type="button" class="mt-2 col-lg-5 btn btn-primary {{ request()->segment(2) == 'movie' ? 'active' : '' }}" style="border-radius: 0">Edit</a>
                     <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-2 col-lg-5 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}" style="border-radius: 0">Delete</a>
                 </div> 
@@ -61,7 +61,7 @@
                 <h4>Harga: </h4>
                 <p>Rp. 170.000</p>
                 <div class="row justify-content-md-center">
-                    <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
+                    <a href={{ url('/movie/buyMovie') }} type="button" class="col-lg-10 btn btn-outline-dark {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Buy</a>
                     <a href={{ url('/movie/editMovie') }} type="button" class="mt-2 col-lg-5 btn btn-primary {{ request()->segment(2) == 'movie' ? 'active' : '' }}" style="border-radius: 0">Edit</a>
                     <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-2 col-lg-5 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}" style="border-radius: 0">Delete</a>
                 </div>
