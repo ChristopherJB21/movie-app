@@ -31,6 +31,10 @@ class HomeController extends Controller
     {
         return response()->view('home.aboutUs');
     }
+    public function movie() : Response
+    {
+        return response()->view('cinemas.cinemasManager');
+    }
 
     public function profile(Request $request) : Response
     {

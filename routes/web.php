@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CinemasController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\UserController;
@@ -34,4 +35,8 @@ Route::controller(UserController::class)->group(function(){
 
 Route::controller(MovieController::class)->group(function(){
     Route::get('/movie', 'movie');
+});
+
+Route::controller(CinemasController::class)->group(function(){
+    Route::get('/cinema', 'cinema');
 });
