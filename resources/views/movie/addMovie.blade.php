@@ -3,22 +3,38 @@
     <div class="m-3 d-flex justify-content-sm-center bg-light rounded-4" style="--bs-bg-opacity: .7;">
         <h3 class="mb-0 py-1">Add Movie</h3>
     </div>
-    <form class="m-3">
+    <form class="m-3 bg-white p-4" action="/movie/addMovie" method="post" enctype="multipart/form-data">
+        @csrf
         <div class="row">
-            <div class="col-lg-6">
-                <label for="inputEmail4">Movie Name</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Movie Name...">
+            <div class="col-lg-12">
+                <label for="txtMovieName">Movie Name</label>
+                <input type="text" class="form-control @error('txtMovieName') is-invalid @enderror"
+                    id="txtMovieName" name="txtMovieName" placeholder="Movie Name..." value="{{ old('txtMovieName') }}">
+
+                <div class="invalid-feedback">
+                    @error('txtMovieName')
+                        {{ $message }}
+                    @enderror
+                </div>
             </div>
-            <div class="col-lg-6">
+            {{-- <div class="col-lg-6">
                 <label for="inputEmail4">Price</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Rp. 90.000,00">
-            </div>
+            </div> --}}
         </div>
         <div class="form-group">
-            <label for="inputAddress">Movie Sinoppsis</label>
-            <textarea  type="text" class="form-control" id="inputAddress" placeholder="Sinopsis"></textarea>
+            <label for="txtMovieSinopsis">Movie Sinopsis</label>
+            <textarea type="text" class="form-control @error('txtMovieSinopsis') is-invalid @enderror"
+                id="txtMovieSinopsis" name="txtMovieSinopsis" placeholder="Sinopsis"
+                value="{{ old('txtMovieSinopsis') }}"></textarea>
+
+            <div class="invalid-feedback">
+                @error('txtMovieSinopsis')
+                    {{ $message }}
+                @enderror
+            </div>
         </div>
-        <div class="row">
+        {{-- <div class="row">
             <div class="form-group col-md-4">
                 <label for="inputCity">Time</label>
                 <input type="text" class="form-control" id="inputCity" placeholder="00:00 - 23.59">
@@ -36,13 +52,22 @@
                     <option>Jakarta Theatre</option>
                 </select>
             </div>
-        </div>
+        </div> --}}
         <div class="mt-3">
-            <label for="exampleFormControlFile1">Thumbnail Picture</label>
-            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            <label for="fileMoviePoster">Thumbnail Picture</label>
+            <input type="file" class="form-control-file @error('fileMoviePoster') is-invalid @enderror"
+            id="fileMoviePoster" id="fileMoviePoster">
+
+            <div class="invalid-feedback">
+                @error('fileMoviePoster')
+                    {{ $message }}
+                @enderror
+            </div>
         </div>
         <button type="submit" class="mt-3 btn btn-purple">Add Movie</button>
-        <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-3 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Delete Movie</a>
-        <a href={{ url('/movie') }} type="button" class="mt-3 btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a>
+        <a href={{ url('/movie/deleteMovie') }} type="button"
+            class="mt-3 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Delete Movie</a>
+        <a href={{ url('/movie') }} type="button"
+            class="mt-3 btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a>
     </form>
 @endsection

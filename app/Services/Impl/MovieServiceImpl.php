@@ -13,4 +13,16 @@ class MovieServiceImpl implements MovieService
 
         return $movies;
     }
+
+    function InsertMovie (string $MovieName, string $MovieSinopsis, string $PathMovie)
+    {
+        $movies = new Movie;
+
+        $movies->title = $MovieName;
+        $movies->sinopsis = $MovieSinopsis;
+        $movies->poster = $PathMovie;
+        $movies->save();
+
+        return true;
+    }
 }

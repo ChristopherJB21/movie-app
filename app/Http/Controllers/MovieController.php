@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MovieRequest;
 use App\Services\MovieService;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -47,10 +48,10 @@ class MovieController extends Controller
                 $output .= "</p>";
                 $output .= "</div>";
                 $output .= "<div class='my-3 col-lg'>";
-                $output .= "<h4>Tanggal Tayang: </h4>";
-                $output .= "<p>14, Maret 2023</p>";
-                $output .= "<h4>Harga: </h4>";
-                $output .= "<p>Rp. 170.000</p>";
+                // $output .= "<h4>Tanggal Tayang: </h4>";
+                // $output .= "<p>14, Maret 2023</p>";
+                // $output .= "<h4>Harga: </h4>";
+                // $output .= "<p>Rp. 170.000</p>";
                 $output .= "<div class='row justify-content-md-center'>";
                 $output .= "<button type='button' class='col-lg-10 btn btn-outline-dark'>Buy</button>";
                 $output .= "</div>";
@@ -60,9 +61,45 @@ class MovieController extends Controller
 
         return Response($output);
     }
-    public function addMovie() : Response
+
+    public function addmovie() : Response
     {
         return response()->view('movie.addMovie');
+    }
+
+    public function insertmovie(MovieRequest $request) : Response
+    {
+        $validated = $request->validated();
+        
+        // $validated = $request->safe();
+
+        $txtMovieName = $request->old('txtMovieName');
+        $txtMovieSinopsis = $request->old('txtMovieSinopsis');
+        $fileMoviePoster = $request->old('fileMoviePoster');
+
+        $MovieName = $request->input('txtMovieName');
+        $MovieSinopsis = $request->input('txtMovieSinopsis');
+        $MoviePoster = $request->file('fileMoviePoster');
+        
+        $DirUpload = "images/moviePoster";
+
+        $NameMoviePoster = time() . "_";
+        $PathMovie = $DirUpload . "/" . $NameMoviePoster;
+
+        $MoviePoster->move($DirUpload, $NameMoviePoster);
+
+        if ($this->movieService->InsertMovie($MovieName, $MovieSinopsis, $PathMovie))
+        {
+            $movies = $this->movieService->getListMovieByTitle('');
+
+            return response()->view('movie.movieManagement', [
+                'movies' => $movies,
+            ]);
+        }
+
+        return response()->view('user.login', [
+            'error' => 'Insert failed',
+        ]);
     }
     public function editMovie() : Response
     {

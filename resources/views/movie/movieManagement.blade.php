@@ -35,10 +35,10 @@
                             </p>
                         </div>
                         <div class="my-3 col-lg ">
-                            <h4>Tanggal Tayang: </h4>
+                            {{-- <h4>Tanggal Tayang: </h4>
                             <p>14, Maret 2023</p>
                             <h4>Harga: </h4>
-                            <p>Rp. 170.000</p>
+                            <p>Rp. 170.000</p> --}}
                             <div class="row justify-content-md-center">
                                 <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
                             </div>
