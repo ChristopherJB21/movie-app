@@ -11,6 +11,7 @@
                 aria-describedby="search-addon" />
         </div>
     </div>
+<div class="container-md">
     <div id="accordion">
         <div class="card mx-3 my-3">
           <div class="card-header" id="headingOne">
@@ -23,11 +24,67 @@
 
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-                <h3>Jakarta Barat</h3>
+                <h3>Central Park Jakarta Barat Lantai 4</h3>
                 <h5>Jl. Ankgasa 1, Blok B, No. 47a-49b</h5>
+                <hr class="border border-dark">
+                <div>
+                    <h4>Playing at Central Park: </h4>
+                    <div class="row">
+                        <div class="my-1 col-lg-3">
+                            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="me-2 img-fluid d-flex" alt="Responsive image">
+                            Avengers: Endgame <br>
+                            120 Menit
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Senin</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                            <h5>Selasa</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="my-1 col-lg-3">
+                            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="me-2 img-fluid d-flex" alt="Responsive image">
+                            Avengers: Endgame <br>
+                            120 Menit
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Senin</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                            <h5>Selasa</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+
 
     <div class="card mx-3 my-3">
         <div class="card-header" id="headingTwo">
@@ -39,8 +96,62 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-                <h3>Jakarta Pusat</h3>
+                <h3>Mangga Dua Jakarta Utara Lantai 3</h3>
                 <h5>Jl. Ankgasa 1, Blok B, No. 47a-49b</h5>
+                <hr class="border border-dark">
+                <div>
+                    <h4>Playing at Mangga Dua: </h4>
+                    <div class="row">
+                        <div class="my-1 col-lg-3">
+                            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="me-2 img-fluid d-flex" alt="Responsive image">
+                            Avengers: Endgame <br>
+                            120 Menit
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Senin</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                            <h5>Selasa</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="my-1 col-lg-3">
+                            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="me-2 img-fluid d-flex" alt="Responsive image">
+                            Avengers: Endgame <br>
+                            120 Menit
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Senin</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                            <h5>Selasa</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -55,8 +166,62 @@
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
-                <h3>Jakarta Pusat</h3>
+                <h3>Djakarta Theatre Jakarta Pusat Lantai 2</h3>
                 <h5>Jl. Ankgasa 1, Blok B, No. 47a-49b</h5>
+                <hr class="border border-dark">
+                <div>
+                    <h4>Playing at Djakarta Theatre: </h4>
+                    <div class="row">
+                        <div class="my-1 col-lg-3">
+                            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="me-2 img-fluid d-flex" alt="Responsive image">
+                            Avengers: Endgame <br>
+                            120 Menit
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Senin</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                            <h5>Selasa</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="my-1 col-lg-3">
+                            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="me-2 img-fluid d-flex" alt="Responsive image">
+                            Avengers: Endgame <br>
+                            120 Menit
+                        </div>
+                        <div class="col-lg-4">
+                            <h5>Senin</h5>
+                            <div class="">
+                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
+                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                            <h5>Selasa</h5>
+                            <div class="">
+                                <button type="button" class="btn btn btn-outline-secondary m-1">07.40</button>
+                                <button type="button" class="btn btn btn-outline-secondary m-1">10.20</button>
+                                <button type="button" class="btn btn btn-outline-secondary m-1">13.20</button>
+                                <button type="button" class="btn btn btn-outline-secondary m-1">18.10</button>
+                                <button type="button" class="btn btn btn-outline-secondary m-1">18.10</button>
+                            </div>
+                            <hr class="border border-dark">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
