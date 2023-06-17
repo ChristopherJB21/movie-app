@@ -47,6 +47,8 @@
                             <div class="row justify-content-md-center">
                                 <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
                             </div>
+                            <a href={{ url('/movie/editMovie/' . $movie->id) }} type="button" class="mt-2 col-lg-5 btn btn-primary" style="border-radius: 0">Edit</a>
+                            <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-2 col-lg-5 btn btn-danger" style="border-radius: 0">Delete</a>
                         </div>
                     </div>
                 </div>

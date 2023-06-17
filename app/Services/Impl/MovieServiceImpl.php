@@ -14,10 +14,29 @@ class MovieServiceImpl implements MovieService
         return $movies;
     }
 
-    function InsertMovie (string $MovieName, string $MovieSinopsis, string $PathMovie)
+    function getMovieByID (string $id) : Movie
+    {
+        $movies = Movie::where('id', $id)->first();
+
+        return $movies;
+    }
+
+    function InsertMovie (string $MovieName, string $MovieSinopsis, string $PathMovie) : bool
     {
         $movies = new Movie;
 
+        $movies->title = $MovieName;
+        $movies->sinopsis = $MovieSinopsis;
+        $movies->poster = $PathMovie;
+        $movies->save();
+
+        return true;
+    }
+
+    function UpdateMovie($id, string $MovieName, string $MovieSinopsis, string $PathMovie) : bool
+    {
+        $movies = Movie::where('id', $id);
+ 
         $movies->title = $MovieName;
         $movies->sinopsis = $MovieSinopsis;
         $movies->poster = $PathMovie;

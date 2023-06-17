@@ -69,36 +69,21 @@ class MovieController extends Controller
 
     public function insertmovie(MovieRequest $request) : Response
     {
-        if ($request->hasFile('fileMoviePoster')){
-            $movies = $this->movieService->getListMovieByTitle('');
-
-            return response()->view('movie.movieManagement', [
-                'movies' => $movies,
-            ]);
-        } else {
-            $movies = $this->movieService->getListMovieByTitle('');
-
-            return response()->view('movie.movieManagement', [
-                'movies' => $movies,
-            ]);
-
-        }
-
         $validated = $request->validated();
         
-        // $validated = $request->safe();
+        $validated = $request->safe();
 
         $txtMovieName = $request->old('txtMovieName');
         $txtMovieSinopsis = $request->old('txtMovieSinopsis');
-        // $fileMoviePoster = $request->old('fileMoviePoster');
+        // $fileMoviePoster = $request->old('file');
 
         $MovieName = $request->input('txtMovieName');
         $MovieSinopsis = $request->input('txtMovieSinopsis');
-        $MoviePoster = $request->file();
+        $MoviePoster = $request->file("filemovieposter");
         
         $DirUpload = "images/moviePoster";
 
-        $NameMoviePoster = time() . "_";
+        $NameMoviePoster = time() . "_" . $MovieName;
         $PathMovie = $DirUpload . "/" . $NameMoviePoster;
 
         $MoviePoster->move($DirUpload, $NameMoviePoster);
@@ -112,13 +97,37 @@ class MovieController extends Controller
             ]);
         }
 
-        return response()->view('user.login', [
+        return response()->view('movie.addMovie', [
             'error' => 'Insert failed',
         ]);
     }
-    public function editMovie() : Response
+    public function editMovie($id) : Response
     {
-        return response()->view('movie.editMovie');
+        $movie = $this->movieService->getMovieByID($id);
+        return response()->view('movie.addMovie', [
+            'movie' => $movie,
+            'isEdit' => 1
+        ]);
+    }
+    public function updateMovie($id, MovieRequest $request) : Response
+    {
+        $validated = $request->validated();
+        
+        $validated = $request->safe();
+
+        $txtMovieName = $request->old('txtMovieName');
+        $txtMovieSinopsis = $request->old('txtMovieSinopsis');
+
+        $MovieName = $request->input('txtMovieName');
+        $MovieSinopsis = $request->input('txtMovieSinopsis');
+        $MoviePoster = $request->file("filemovieposter");
+
+        $this->movieService->UpdateMovie($id, $MovieName, $MovieSinopsis, $MoviePoster);
+
+        $movies = $this->movieService->getListMovieByTitle('');
+        return response()->view('movie.movieManagement', [
+            'movies' => $movies
+        ]);
     }
     public function deleteMovie() : Response
     {

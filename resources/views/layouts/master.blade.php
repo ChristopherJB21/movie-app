@@ -20,7 +20,7 @@
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            background-image: url({{ asset('/images/Background.svg') }});
+            background-color: purple;
         }
     </style>
 

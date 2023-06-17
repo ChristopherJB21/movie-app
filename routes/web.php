@@ -38,7 +38,8 @@ Route::controller(MovieController::class)->group(function(){
     Route::post('/movie/search', 'searchMovie');
     Route::get('/movie/addMovie', 'addmovie');
     Route::post('/movie/addMovie', 'insertmovie');
-    Route::get('/movie/editMovie', 'editmovie');
+    Route::get('/movie/editMovie/{id}', 'editmovie');
+    Route::post('/movie/editMovie/{id}', 'updatemovie');
     Route::get('/movie/deleteMovie', 'deletemovie');
     Route::get('/movie/buyMovie', 'buymovie');
     Route::get('/movie/tickets', 'tickets');
