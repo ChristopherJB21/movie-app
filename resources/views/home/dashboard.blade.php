@@ -39,24 +39,5 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <div class="heading-twenty bottom-margin-sm">
-                    <div class="select-twenty dark-twenty">
-                        <select class="custom-select" id="cityChanged" onchange="window.location=this.options[this.selectedIndex].value">
-                            <option data-id="1" value="">AMBON</option>
-                            <option data-id="2" value="">BALIKPAPAN</option>
-                            <option data-id="3" value="">BANDUNG</option>
-                            <option data-id="4" value="">BANJARMASIN</option>
-                            <option data-id="5" value="">BATAM</option>
-                            <option data-id="6" value="">BEKASI</option>
-                            <option data-id="7" value="">BENGKULU</option>
-                            <option data-id="8" value="">BOGOR</option>
-                            <option data-id="9" value="">CIANJUR</option>
-                        </select>
-                    </div>
-                    <input type="text" name="cinema-search" id="cinemaSearch" placeholder="Search...">
-                </div>
-            </div>
-        </div>
+        
 @endsection
