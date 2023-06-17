@@ -48,8 +48,6 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            
-                            <hr class="border border-dark">
                             <h5>Selasa</h5>
                             <!-- Button trigger modal -->
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -64,9 +62,9 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 20.10
                             </button>
-                            <hr class="border border-dark">
                         </div>
                     </div>
+                    <hr class="border border-dark">
                     <div class="row">
                         <div class="my-1 col-lg-3">
                             <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="me-2 img-fluid d-flex" alt="Responsive image">
@@ -86,7 +84,6 @@
                                 17.10
                             </button>
 
-                            <hr class="border border-dark">
                             <h5>Selasa</h5>
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 11.20
@@ -100,10 +97,9 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 20.10
                             </button>
-                            
-                            <hr class="border border-dark">
                         </div>
                     </div>
+                    <hr class="border border-dark">
                 </div>
             </div>
         </div>
@@ -142,7 +138,6 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            <hr class="border border-dark">
                             <h5>Selasa</h5>
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 11.20
@@ -156,8 +151,8 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            <hr class="border border-dark">
                         </div>
+                        <hr class="border border-dark">
                     </div>
                     <div class="row">
                         <div class="my-1 col-lg-3">
@@ -176,7 +171,6 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            <hr class="border border-dark">
                             <h5>Selasa</h5>
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 11.20
@@ -190,10 +184,10 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            <hr class="border border-dark">
                         </div>
                     </div>
                 </div>
+                <hr class="border border-dark">
             </div>
         </div>
     </div>
@@ -231,7 +225,6 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            <hr class="border border-dark">
                             <h5>Selasa</h5>
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 11.20
@@ -245,9 +238,9 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            <hr class="border border-dark">
                         </div>
                     </div>
+                    <hr class="border border-dark">
                     <div class="row">
                         <div class="my-1 col-lg-3">
                             <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="me-2 img-fluid d-flex" alt="Responsive image">
@@ -265,7 +258,6 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            <hr class="border border-dark">
                             <h5>Selasa</h5>
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 11.20
@@ -279,9 +271,9 @@
                             <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                 17.10
                             </button>
-                            <hr class="border border-dark">
                         </div>
                     </div>
+                    <hr class="border border-dark">
                 </div>
             </div>
         </div>
