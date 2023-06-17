@@ -24,8 +24,9 @@
 
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
-                <h3>Central Park Jakarta Barat Lantai 4</h3>
-                <h5>Jl. Ankgasa 1, Blok B, No. 47a-49b</h5>
+                <h4>Central Park Jakarta Barat Lantai 4</h4>
+                Jl. Ankgasa 1, Blok B, No. 47a-49b <br>
+                (021)123-3213-23
                 <hr class="border border-dark">
                 <div>
                     <h4>Playing at Central Park: </h4>
@@ -96,8 +97,9 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
             <div class="card-body">
-                <h3>Mangga Dua Jakarta Utara Lantai 3</h3>
-                <h5>Jl. Ankgasa 1, Blok B, No. 47a-49b</h5>
+                <h4>Mangga Dua Jakarta Utara Lantai 3</h4>
+                Jl. Ankgasa 1, Blok B, No. 47a-49b <br>
+                (021)123-3213-23
                 <hr class="border border-dark">
                 <div>
                     <h4>Playing at Mangga Dua: </h4>
@@ -166,8 +168,9 @@
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
-                <h3>Djakarta Theatre Jakarta Pusat Lantai 2</h3>
-                <h5>Jl. Ankgasa 1, Blok B, No. 47a-49b</h5>
+                <h4>Djakarta Theatre Jakarta Pusat Lantai 2</h4>
+                Jl. Ankgasa 1, Blok B, No. 47a-49b <br>
+                (021)123-3213-23
                 <hr class="border border-dark">
                 <div>
                     <h4>Playing at Djakarta Theatre: </h4>
