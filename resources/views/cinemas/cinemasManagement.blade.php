@@ -14,8 +14,8 @@
 <div class="container-md">
     <div id="accordion">
         <div class="card mx-3 my-3">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
                 <button class="btn collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Central Park, CGV
                 </button>
@@ -38,20 +38,32 @@
                         </div>
                         <div class="col-lg-4">
                             <h5>Senin</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
-                            </div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
+                            
                             <hr class="border border-dark">
                             <h5>Selasa</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                            </div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                20.10
+                            </button>
                             <hr class="border border-dark">
                         </div>
                     </div>
@@ -63,20 +75,32 @@
                         </div>
                         <div class="col-lg-4">
                             <h5>Senin</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
-                            </div>
+
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
+
                             <hr class="border border-dark">
                             <h5>Selasa</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                20.10
+                            </button>
+                            
                             <hr class="border border-dark">
                         </div>
                     </div>
@@ -84,8 +108,6 @@
             </div>
         </div>
     </div>
-</div>
-
 
     <div class="card mx-3 my-3">
         <div class="card-header" id="headingTwo">
@@ -111,20 +133,29 @@
                         </div>
                         <div class="col-lg-4">
                             <h5>Senin</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
                             <hr class="border border-dark">
                             <h5>Selasa</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
                             <hr class="border border-dark">
                         </div>
                     </div>
@@ -136,20 +167,29 @@
                         </div>
                         <div class="col-lg-4">
                             <h5>Senin</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
                             <hr class="border border-dark">
                             <h5>Selasa</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
                             <hr class="border border-dark">
                         </div>
                     </div>
@@ -182,20 +222,29 @@
                         </div>
                         <div class="col-lg-4">
                             <h5>Senin</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
                             <hr class="border border-dark">
                             <h5>Selasa</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">07.40</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">10.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">13.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">18.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
                             <hr class="border border-dark">
                         </div>
                     </div>
@@ -207,23 +256,61 @@
                         </div>
                         <div class="col-lg-4">
                             <h5>Senin</h5>
-                            <div class="">
-                                <button type="button" class="m-1 btn btn-outline-secondary">11.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">14.20</button>
-                                <button type="button" class="m-1 btn btn-outline-secondary">17.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
                             <hr class="border border-dark">
                             <h5>Selasa</h5>
-                            <div class="">
-                                <button type="button" class="btn btn btn-outline-secondary m-1">07.40</button>
-                                <button type="button" class="btn btn btn-outline-secondary m-1">10.20</button>
-                                <button type="button" class="btn btn btn-outline-secondary m-1">13.20</button>
-                                <button type="button" class="btn btn btn-outline-secondary m-1">18.10</button>
-                                <button type="button" class="btn btn btn-outline-secondary m-1">18.10</button>
-                            </div>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                11.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                14.20
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
+                            <button type="button" class="my-1 btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                17.10
+                            </button>
                             <hr class="border border-dark">
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Buy ticket</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Avengers: Endgame
+                    <div class="m-2 dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tiket
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="#">4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Buy</button>
                 </div>
             </div>
         </div>
