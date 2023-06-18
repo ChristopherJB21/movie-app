@@ -13,8 +13,8 @@
 
         <div class="text-center" >
             <div class="grid_movie">
-                <a href="gui.movie_details.php?sid=&amp;movie_id=23ELEL">
-                <img src="images/movieAssets/anime-poster-K86JWC.jpg" style="max-height:500px">
+                <a href="">
+                <img src="images/movieAssets/THE FLASH.png" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
                 <div class="title text-center">
@@ -28,8 +28,8 @@
 
         <div class="text-center" >
             <div class="grid_movie">
-                <a href="gui.movie_details.php?sid=&amp;movie_id=23ELEL">
-                <img src="images/movieAssets/anime-poster-K86JWC.jpg" style="max-height:500px">
+                <a href="">
+                <img src="images/movieAssets/THE CHILDE.jpg" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
                 <div class="title text-center">
@@ -43,8 +43,8 @@
 
         <div class="text-center" >
             <div class="grid_movie">
-                <a href="gui.movie_details.php?sid=&amp;movie_id=23ELEL">
-                <img src="images/movieAssets/anime-poster-K86JWC.jpg" style="max-height:500px">
+                <a href="">
+                <img src="images/movieAssets/TRANSFORMERS RISE OF THE BEASTS.jpg" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
                 <div class="title text-center">
@@ -58,8 +58,8 @@
 
         <div class="text-center" >
             <div class="grid_movie">
-                <a href="gui.movie_details.php?sid=&amp;movie_id=23ELEL">
-                <img src="images/movieAssets/anime-poster-K86JWC.jpg" style="max-height:500px">
+                <a href="">
+                <img src="images/movieAssets/THE BOOGEYMAN.jpg" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
                 <div class="title text-center">
