@@ -30,7 +30,7 @@
                 <p>14, Maret 2023</p>
                 <p>Rp. 170.000</p>
                 <div class="row justify-content-md-center">
-                    <button type="button" class="col-lg-6 btn btn-outline-dark">Buy</button>
+                <a type="button" class="col-lg-6 btn btn-outline-dark {{ request()->segment(2) == 'movie' ? 'active' : '' }}" href={{ url('/movie/buyticket') }}>Buy</a>
                 </div>
             </div>
         </div>
@@ -52,8 +52,8 @@
             <div class="mt-3 col-lg-3">
                 <p>14, Maret 2023</p>
                 <p>Rp. 170.000</p>
-                <div class="row justify-content-md-center">
-                    <button type="button" class="col-lg-6 btn btn-outline-dark">Buy</button>
+                <div class="row justify-content-md-center" >
+                    <a type="button" class="col-lg-6 btn btn-outline-dark {{ request()->segment(2) == 'movie' ? 'active' : '' }}" href={{ url('/movie/buyticket') }}>Buy</a>
                 </div>
             </div>
         </div>
