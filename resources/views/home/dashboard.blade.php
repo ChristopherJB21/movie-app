@@ -11,13 +11,38 @@
             </div>
         </div>
 
+        <div class="background">
+            <img src="images/movieAssets/PROMOTION.png" style="max-height:500px; background: no-repeat" alt="">
+            <div class="text-center" >
+                <div class="text-center" >
+                    <div class="grid_movie">
+                    <a href="">
+                    <img src="images/movieAssets/THE FLASH.png" style="max-height:500px">
+                    </a>
+                    <div class="clearfix "> </div>
+                    <div class="title text-center">
+                        THE FLASH
+                    </div>
+                    <div class="button" style="margin: 20px;">
+                        <div class="btn-group-sm rating">
+                            <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                            <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="text-center" >
-            <div class="grid_movie">
+            <div class="text-center" >
+                <div class="grid_movie">
                 <a href="">
                 <img src="images/movieAssets/THE FLASH.png" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
-                <div class="title text-center" style="margin: 5px">
+                <div class="title text-center">
                     THE FLASH
                 </div>
                 <div class="button" style="margin: 20px;">
@@ -27,7 +52,9 @@
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="text-center" >
             <div class="text-center" >
                 <div class="grid_movie">
                 <a href="">
@@ -44,9 +71,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+            
 
-            <div class="text-center" >
-                <div class="grid_movie">
+        <div class="text-center" >
+            <div class="grid_movie">
                 <a href="">
                 <img src="images/movieAssets/TRANSFORMERS RISE OF THE BEASTS.jpg" style="max-height:500px">
                 </a>
@@ -61,9 +90,10 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="text-center" >
-                <div class="grid_movie">
+        <div class="text-center" >
+            <div class="grid_movie">
                 <a href="">
                 <img src="images/movieAssets/THE BOOGEYMAN.jpg" style="max-height:500px">
                 </a>
