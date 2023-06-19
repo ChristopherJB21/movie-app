@@ -17,63 +17,66 @@
                 <img src="images/movieAssets/THE FLASH.png" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
-                <div class="title text-center">
-                    ELEMENTAL FORCES OF NATURE
+                <div class="title text-center" style="margin: 5px">
+                    THE FLASH
                 </div>
-                <div class="btn-group-sm rating">
-                <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
-                <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                <div class="button" style="margin: 20px;">
+                    <div class="btn-group-sm rating">
+                        <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                        <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="text-center" >
-            <div class="grid_movie">
+            <div class="text-center" >
+                <div class="grid_movie">
                 <a href="">
                 <img src="images/movieAssets/THE CHILDE.jpg" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
                 <div class="title text-center">
-                    TITLE
+                    THE CHILDE
                 </div>
-                <div class="btn-group-sm rating">
-                <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
-                <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                <div class="button" style="margin: 20px;">
+                    <div class="btn-group-sm rating">
+                        <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                        <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="text-center" >
-            <div class="grid_movie">
+            <div class="text-center" >
+                <div class="grid_movie">
                 <a href="">
                 <img src="images/movieAssets/TRANSFORMERS RISE OF THE BEASTS.jpg" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
                 <div class="title text-center">
-                    TITLE
+                    TRANSFORMERS: RISE OF THE BEASTS
                 </div>
-                <div class="btn-group-sm rating">
-                <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
-                <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                <div class="button" style="margin: 20px;">
+                    <div class="btn-group-sm rating">
+                        <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                        <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="text-center" >
-            <div class="grid_movie">
+            <div class="text-center" >
+                <div class="grid_movie">
                 <a href="">
                 <img src="images/movieAssets/THE BOOGEYMAN.jpg" style="max-height:500px">
                 </a>
                 <div class="clearfix "> </div>
                 <div class="title text-center">
-                    TITLE
+                    THE BOOGEYMAN
                 </div>
-                <div class="btn-group-sm rating">
-                <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
-                <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                <div class="button" style="margin: 20px;">
+                    <div class="btn-group-sm rating">
+                        <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                        <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    
-        
-    
-        
-        
 @endsection
