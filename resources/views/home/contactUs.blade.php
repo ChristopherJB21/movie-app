@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
-    <div class="col-lg-3 container-fluid text-center row justify-content-start mt-3 ms-2 mb-2">
-        <h1 class="bg-purple rounded-3 text-white">Contact us </h1>
+    <div class="col-lg-11.1 container-fluid text-center row justify-content-start mt-3 ms-2 mb-2">
+        <h1 class="bg-purple rounded-3 text-white">Contact us</h1>
     </div>
-    <div class="p-3 m-3 rounded-4 bg-dark text-white" style="--bs-bg-opacity: .7;">
+    <div class="p-3 m-3 rounded-4 bg-dark text-white" style="--bs-bg-opacity: .7; height: 50vh;">
         <div class="container-fluid text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-3 mx-5 px-2">
