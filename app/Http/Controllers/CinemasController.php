@@ -10,4 +10,8 @@ class CinemasController extends Controller
     {
         return response()->view('cinemas.cinemasManagement');
     }
+    public function cinema() : Response
+    {
+        return response()->view('cinemas.cinemasManager');
+    }
 }

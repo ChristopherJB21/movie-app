@@ -16,8 +16,10 @@
                         href={{ url('/movie') }}>Movies</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link {{ request()->segment(1) == 'cinemas' ? 'active' : '' }}" aria-current="page" 
+                    <a class="nav-link {{ request()->segment(1) == 'cinemas' ? 'active' : '' }}" aria-current="page"
                         href={{ url('/cinemas') }}>Cinemas</a>
+                    <a class="nav-link {{ request()->segment(1) == 'movie' ? 'active' : '' }}" aria-current="page"
+                        href={{ url('/cinema') }}>Cinemas</a>
                 </li>
                 <li class="nav-item dropdown mx-2">
                     <a class="nav-link dropdown-toggle {{ request()->segment(1) == 'about' ? 'active' : '' }}"
