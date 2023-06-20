@@ -185,7 +185,9 @@ return [
         'txtEmailAddress' => 'email address',
         'txtPhoneNumber' => 'phone number',
         'txtPassword' => 'password',
-        'txtConfirmPassword' => 'confirm password'
+        'txtConfirmPassword' => 'confirm password',
+        'txtMovieName' => 'movie name',
+        'txtMovieSinopsis' => 'movie sinopsis'
     ],
 
 ];

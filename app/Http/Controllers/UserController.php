@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
+use App\Services\MovieService;
 use App\Services\UserService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -12,15 +13,21 @@ use Illuminate\Http\Response;
 class UserController extends Controller
 {
     private UserService $userService;
+    private MovieService $movieService;
 
-    public function __construct(UserService $userService)
+    public function __construct(UserService $userService, MovieService $movieService)
     {
         $this->userService = $userService;
+        $this->movieService = $movieService;
     }
 
     public function login() : Response
     {
-        return response()->view('user.login');
+        $movies = $this->movieService->getOneMovie();
+
+        return response()->view('user.login', [
+            'movies' => $movies,
+        ]);
     }
 
     public function doLogin(LoginRequest $request) : Response|RedirectResponse

@@ -16,16 +16,24 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('ms_users')->insert([
-            'id' => fake()->uuid(),
+        User::create([
             'first_name' => 'Super',
             'last_name' => 'Admin',
             'email' => 'admin@gmail.com',
             'phone_number' => fake()->phoneNumber(),
             'role_id' => 1,
             'password' => Hash::make("password"), // password
-            'remember_token' => Str::random(10),
         ]);
+        // DB::table('ms_users')->insert([
+        //     'id' => fake()->uuid(),
+        //     'first_name' => 'Super',
+        //     'last_name' => 'Admin',
+        //     'email' => 'admin@gmail.com',
+        //     'phone_number' => fake()->phoneNumber(),
+        //     'role_id' => 1,
+        //     'password' => Hash::make("password"), // password
+        //     'remember_token' => Str::random(10),
+        // ]);
 
         User::factory(10)->create();
     }

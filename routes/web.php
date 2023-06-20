@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BuyTicketController;
+use App\Http\Controllers\CinemasController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\UserController;
@@ -34,4 +36,25 @@ Route::controller(UserController::class)->group(function(){
 
 Route::controller(MovieController::class)->group(function(){
     Route::get('/movie', 'movie');
+    Route::post('/movie/search', 'searchMovie');
+    Route::get('/movie/addMovie', 'addmovie');
+    Route::post('/movie/addMovie', 'insertmovie');
+    Route::get('/movie/editMovie/{id}', 'editmovie');
+    Route::post('/movie/editMovie/{id}', 'updatemovie');
+    Route::get('/movie/deleteMovie', 'deletemovie');
+    Route::get('/movie/buyMovie', 'buymovie');
+    Route::get('/movie/buyMovie/payment', 'payment');
+    Route::get('/movie/buyticket', 'Buyticket');
+
+    // Route::get('/tickets', 'tickets');
+});
+
+Route::controller(CinemasController::class)->group(function(){
+    Route::get('/cinemas', 'cinemas'); 
+    Route::post('/cinema/search', 'searchCinema');
+});
+
+Route::controller(BuyTicketController::class)->group(function(){
+    Route::get('/tickets/movie/{idMovie}', 'ticketsMovie');
+    Route::get('/tickets/movie/{idCinema}', 'ticketsCinema');
 });
