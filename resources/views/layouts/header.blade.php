@@ -21,18 +21,20 @@
                     {{-- <a class="nav-link {{ request()->segment(1) == 'movie' ? 'active' : '' }}" aria-current="page"
                         href={{ url('/cinema') }}>Cinemas</a> --}}
                 </li>
-                <li class="nav-item dropdown mx-2">
-                    <a class="nav-link dropdown-toggle {{ request()->segment(1) == 'tickets' ? 'active' : '' }}"
-                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Ticket
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item {{ request()->segment(2) == 'buyticket' ? 'active' : '' }}"
-                                href={{ url('/about/aboutUs') }}>Buy Ticket</a></li>
-                        <li><a class="dropdown-item {{ request()->segment(2) == 'myticket' ? 'active' : '' }}"
-                                href={{ url('/about/contactUs') }}>My Ticket</a></li>
-                    </ul>
-                </li>
+                @if ($UserRole == 'Customer')
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle {{ request()->segment(1) == 'tickets' ? 'active' : '' }}"
+                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ticket
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item {{ request()->segment(2) == 'buyticket' ? 'active' : '' }}"
+                                    href={{ url('/about/aboutUs') }}>Buy Ticket</a></li>
+                            <li><a class="dropdown-item {{ request()->segment(2) == 'myticket' ? 'active' : '' }}"
+                                    href={{ url('/about/contactUs') }}>My Ticket</a></li>
+                        </ul>
+                    </li>
+                @endif
                 <li class="nav-item dropdown mx-2">
                     <a class="nav-link dropdown-toggle {{ request()->segment(1) == 'about' ? 'active' : '' }}"
                         href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -6,7 +6,7 @@
                 <div class="col-lg-4 bg-white rounded">
                     <div class="col-lg-12 py-5 px-2">
                         <div class="col-lg-12 p-3 text-center">
-                            <a href={{ url('/') }}><img src="images/Logo.svg"></a>
+                            <a href={{ url('/') }}><img src={{asset('images/Logo.svg')}}></a>
                         </div>
                         <div class="col-lg-12 text-center">
                             <p class="h5">Login to your Account</p>

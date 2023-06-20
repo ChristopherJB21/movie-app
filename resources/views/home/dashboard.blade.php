@@ -10,7 +10,7 @@
             @if (isset($movies))
                 @foreach ($movies as $movie)
                     <div class="col-lg-4 text-center my-3">
-                        <a href="">
+                        <a href={{url('/tickets/movie/' . $movie->id)}}>
                             <img src={{$movie->poster}} style="height: 450px;">
                         </a>
                         <div class="clearfix "> </div>

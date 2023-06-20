@@ -173,6 +173,7 @@ return [
         App\Providers\MovieServiceProvider::class,
         App\Providers\HomeServiceProvider::class,
         App\Providers\CinemaServiceProvider::class,
+        App\Providers\BuyTicketProvider::class,
     ])->toArray(),
 
     /*

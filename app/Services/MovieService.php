@@ -7,7 +7,7 @@ use App\Models\Movie;
 interface MovieService
 {
     function getListMovieByTitle (string $title);
-    function getMovieByID (string $id) : Movie;
+    function getMovieByID (string $id);
     function getMovieShowing ();
     function getOneMovie ();
     function InsertMovie (string $MovieName, string $MovieSinopsis, string $PathMovie) : bool;

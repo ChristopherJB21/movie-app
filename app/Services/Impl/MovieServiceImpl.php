@@ -14,11 +14,11 @@ class MovieServiceImpl implements MovieService
         return $movies;
     }
 
-    function getMovieByID (string $id) : Movie
+    function getMovieByID (string $id)
     {
         $movies = Movie::where('id', $id)->first();
 
-        return $movies;
+        return collect([$movies]);
     }
 
     function getMovieShowing ()
