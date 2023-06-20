@@ -11,7 +11,7 @@
             </div>
         </div>
 
-        <div class="background" style="background-image: url(images/movieAssets/PROMOTION.png); height: 78vh; margin: 22px">
+        <div class="background" >
             <div class="text-center">
                 <div class="text-center" >
                     <div class="grid_movie">
@@ -19,13 +19,13 @@
                     <img src="images/movieAssets/THE FLASH.png" style="max-height: 500px; margin: 13px">
                     </a>
                     <div class="clearfix"> </div>
-                    <div class="title text-center">
+                    <div class="title text-center" style="color: #000000;">
                         THE FLASH
                     </div>
                     <div class="button">
                         <div class="btn-group-sm rating">
-                            <span class="btn btn-default btn-outline disabled" style="color: #ffffff;">2D</span>
-                            <a class="btn btn-default btn-outline disabled" style="color: #ffffff;">SU</a>
+                            <span class="btn btn-default btn-outline disabled" style="color: #000000;">2D</span>
+                            <a class="btn btn-default btn-outline disabled" style="color: #000000;">SU</a>
                         </div>
                     </div>
                     </div>
@@ -34,7 +34,7 @@
         </div>
 
 
-        <div class="background" style="background-image: url(images/movieAssets/PROMOTION.png); height: 78vh; margin: 22px">
+        <div class="background" >
             <div class="text-center">
                 <div class="text-center" >
                     <div class="grid_movie">
@@ -42,13 +42,13 @@
                     <img src="images/movieAssets/TRANSFORMERS RISE OF THE BEASTS.jpg" style="max-height: 500px; margin: 13px">
                     </a>
                     <div class="clearfix"> </div>
-                    <div class="title text-center">
+                    <div class="title text-center" style="color: #000000;">
                         TRANSFORMERS: RISE OF THE BEASTS
                     </div>
                     <div class="button">
                         <div class="btn-group-sm rating">
-                            <span class="btn btn-default btn-outline disabled" style="color: #ffffff;">2D</span>
-                            <a class="btn btn-default btn-outline disabled" style="color: #ffffff;">SU</a>
+                            <span class="btn btn-default btn-outline disabled" style="color: #000000;">2D</span>
+                            <a class="btn btn-default btn-outline disabled" style="color: #000000;">SU</a>
                         </div>
                     </div>
                     </div>
@@ -56,7 +56,7 @@
             </div>
         </div>
 
-        <div class="background" style="background-image: url(images/movieAssets/PROMOTION.png); height: 78vh; margin: 22px">
+        <div class="background" >
             <div class="text-center">
                 <div class="text-center" >
                     <div class="grid_movie">
@@ -64,13 +64,13 @@
                     <img src="images/movieAssets/THE CHILDE.jpg" style="max-height: 500px; margin: 13px">
                     </a>
                     <div class="clearfix"> </div>
-                    <div class="title text-center">
+                    <div class="title text-center" style="color: #000000;">
                         THE CHILDE
                     </div>
                     <div class="button">
                         <div class="btn-group-sm rating">
-                            <span class="btn btn-default btn-outline disabled" style="color: #ffffff;">2D</span>
-                            <a class="btn btn-default btn-outline disabled" style="color: #ffffff;">SU</a>
+                            <span class="btn btn-default btn-outline disabled" style="color: #000000;">2D</span>
+                            <a class="btn btn-default btn-outline disabled" style="color: #000000;">SU</a>
                         </div>
                     </div>
                     </div>
@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <div class="background" style="background-image: url(images/movieAssets/PROMOTION.png); height: 78vh; margin: 22px">
+        <div class="background">
             <div class="text-center">
                 <div class="text-center" >
                     <div class="grid_movie">
@@ -86,13 +86,13 @@
                     <img src="images/movieAssets/THE BOOGEYMAN.jpg" style="max-height: 500px; margin: 13px">
                     </a>
                     <div class="clearfix"> </div>
-                    <div class="title text-center">
+                    <div class="title text-center" style="color: #000000;">
                         THE BOOGEYMAN
                     </div>
                     <div class="button">
                         <div class="btn-group-sm rating">
-                            <span class="btn btn-default btn-outline disabled" style="color: #ffffff;">2D</span>
-                            <a class="btn btn-default btn-outline disabled" style="color: #ffffff;">SU</a>
+                            <span class="btn btn-default btn-outline disabled" style="color: #000000;">2D</span>
+                            <a class="btn btn-default btn-outline disabled" style="color: #000000;">SU</a>
                         </div>
                     </div>
                     </div>
