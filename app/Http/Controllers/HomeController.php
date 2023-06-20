@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileRequest;
 use App\Models\User;
+use App\Services\HomeService;
+use App\Services\MovieService;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -11,15 +13,22 @@ use Illuminate\Http\Response;
 class HomeController extends Controller
 {
     private UserService $userService;
+    private HomeService $homeService;
+    private MovieService $movieService;
 
-    public function __construct(UserService $userService)
+    public function __construct(HomeService $homeService, UserService $userService, MovieService $movieService)
     {
+        $this->homeService = $homeService;
         $this->userService = $userService;
+        $this->movieService = $movieService;
     }
 
     public function dashboard() : Response
     {
-        return response()->view('home.dashboard');
+        $movies = $this->movieService->getMovieShowing();
+        return response()->view('home.dashboard', [
+            'movies' => $movies
+        ]);
     }
 
     public function contactUs() : Response
@@ -30,10 +39,6 @@ class HomeController extends Controller
     public function aboutUs() : Response
     {
         return response()->view('home.aboutUs');
-    }
-    public function movie() : Response
-    {
-        return response()->view('cinemas.cinemasManager');
     }
 
     public function profile(Request $request) : Response

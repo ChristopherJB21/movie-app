@@ -1,10 +1,14 @@
 @extends('layouts.app')
 @section('content')
     <div class="col-lg-11.1 container-fluid text-center row justify-content-start mt-3 ms-2 mb-2">
-        <h1 class="bg-purple rounded-3 text-white">Contact us</h1>
     </div>
-    <div class="p-3 m-3 rounded-4 bg-dark text-white" style="--bs-bg-opacity: .7; height: 50vh;">
+    <div class="p-3 m-3 rounded-4 bg-dark-purple text-white">
         <div class="container-fluid text-center">
+            <div class="row justify-content-center">
+                <a href={{ url('/') }}><img src={{ asset('/images/Logo.svg') }}></a>
+            </div>
+
+            <h1 class="my-3">Contact us</h1>
             <div class="row justify-content-center">
                 <div class="col-lg-3 mx-5 px-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"

@@ -4,16 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\MovieRequest;
 use App\Services\MovieService;
+use App\Services\UserService;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class MovieController extends Controller
 {
     private MovieService $movieService;
+    private UserService $userService;
 
-    public function __construct(MovieService $movieService)
+    public function __construct(MovieService $movieService, UserService $userService)
     {
         $this->movieService = $movieService;
+        $this->userService = $userService;
     }
 
     public function movie() : Response
@@ -27,8 +30,14 @@ class MovieController extends Controller
     public function searchMovie(Request $request) : Response
     {
         $output = "";
+        $role = $this->userService->getUserRole();
 
         $title = $request->input('title');
+
+        if (!isset($title))
+        {
+            $title = '';
+        }
 
         $movies = $this->movieService->getListMovieByTitle($title);
 
@@ -48,12 +57,20 @@ class MovieController extends Controller
                 $output .= "</p>";
                 $output .= "</div>";
                 $output .= "<div class='my-3 col-lg'>";
-                // $output .= "<h4>Tanggal Tayang: </h4>";
-                // $output .= "<p>14, Maret 2023</p>";
-                // $output .= "<h4>Harga: </h4>";
-                // $output .= "<p>Rp. 170.000</p>";
                 $output .= "<div class='row justify-content-md-center'>";
-                $output .= "<button type='button' class='col-lg-10 btn btn-outline-dark'>Buy</button>";
+                if ($role == 'Super Admin')
+                {
+                    $output .= "<a href=";
+                    $output .= url('/movie/editMovie/' . $movie->id);
+                    $output .= " type='button' class='mx-2 col-lg-4 btn btn-primary'>Edit</a>";
+                    $output .= "<a href=";
+                    $output .= url('/movie/deleteMovie' . $movie->id);
+                    $output .= " type='button' class='mx-2 col-lg-4 btn btn-danger'>Delete</a>";
+                }
+                else
+                {
+                    $output .= "<button type='button' class='col-lg-10 btn btn-outline-dark'>Buy</button>";
+                }
                 $output .= "</div>";
                 $output .= "</div>";
             }

@@ -9,14 +9,28 @@ class MovieServiceImpl implements MovieService
 {
     function getListMovieByTitle (string $title)
     {
-        $movies = Movie::where('title','LIKE','%'.$title.'%')->get();
-
+        $movies = Movie::where('title','LIKE','%'.$title.'%')->orderBy('title', 'asc')->get();
+        
         return $movies;
     }
 
     function getMovieByID (string $id) : Movie
     {
         $movies = Movie::where('id', $id)->first();
+
+        return $movies;
+    }
+
+    function getMovieShowing ()
+    {
+        $movies = Movie::orderBy('created_at', 'desc')->take(9)->get();
+
+        return $movies;
+    }
+
+    function getOneMovie()
+    {
+        $movies = Movie::orderBy('created_at', 'desc')->take(1)->get();
 
         return $movies;
     }

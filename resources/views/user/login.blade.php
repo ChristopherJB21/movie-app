@@ -72,8 +72,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 bg-purple rounded">
-                    <h1>test2</h1>
+                <div class="col-lg-4 bg-purple rounded text-center py-5">
+                    <img src={{$movies[0]->poster}} style="height: 450px;">
                 </div>
             </div>
         </div>
