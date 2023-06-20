@@ -108,7 +108,7 @@
                                 Total Payment: Rp. 205.000,00
                         </div>
                         <div class="modal-footer">
-                            <a type="button" class="btn btn-success" href={{ url('/') }}>Buy Ticket</a>
+                            <a type="button" class="btn btn-success {{ request()->segment(3) == 'Buyticket' ? 'active' : '' }}" href={{ url('/movie/buyticket/payment') }}>Buy Ticket</a>
                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>

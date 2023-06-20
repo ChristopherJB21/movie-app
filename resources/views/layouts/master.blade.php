@@ -25,6 +25,17 @@
         .w-80{
             width:67%;
         }
+        .w-20{
+            width:20%;
+        }
+        .line{
+            width:2px;
+            height: 2rem;
+            background-color:00000;
+        }
+        .bg-borderPayment{
+            background-color: #BFBFBF;
+        }
     </style>
 
 </head>
