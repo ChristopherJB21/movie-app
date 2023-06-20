@@ -22,6 +22,9 @@
             background-repeat: no-repeat;
             background-image: url({{ asset('/images/Background.svg') }});
         }
+        .w-80{
+            width:67%;
+        }
     </style>
 
 </head>
