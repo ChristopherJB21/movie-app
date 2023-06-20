@@ -145,4 +145,9 @@ class MovieController extends Controller
     {
         return response()->view('movie.tickets');
     }
+
+    public function buyticket() : Response
+    {
+        return response()->view('Buyticket.buyticket');
+    }
 }

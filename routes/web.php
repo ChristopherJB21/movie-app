@@ -44,6 +44,7 @@ Route::controller(MovieController::class)->group(function(){
     Route::get('/movie/buyMovie', 'buymovie');
     Route::get('/movie/tickets', 'tickets');
     Route::get('/movie/buyMovie/payment', 'payment');
+    Route::get('/movie/buyticket', 'Buyticket');
 });
 
 Route::controller(CinemasController::class)->group(function(){

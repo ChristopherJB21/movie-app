@@ -47,8 +47,10 @@
                             <div class="row justify-content-md-center">
                                 <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
                             </div>
-                            <a href={{ url('/movie/editMovie/' . $movie->id) }} type="button" class="mt-2 col-lg-5 btn btn-primary" style="border-radius: 0">Edit</a>
-                            <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-2 col-lg-5 btn btn-danger" style="border-radius: 0">Delete</a>
+                            <a href={{ url('/movie/editMovie/' . $movie->id) }} type="button"
+                                class="mt-2 col-lg-5 btn btn-primary" style="border-radius: 0">Edit</a>
+                            <a href={{ url('/movie/deleteMovie') }} type="button" class="mt-2 col-lg-5 btn btn-danger"
+                                style="border-radius: 0">Delete</a>
                         </div>
                     </div>
                 </div>
@@ -121,3 +123,35 @@
     </div> --}}
         <script type="text/javascript" src="{{ asset('js/searchMovie.js') }}"></script>
     @endsection
+    <a type="button" class="col-lg-6 btn btn-outline-dark {{ request()->segment(2) == 'movie' ? 'active' : '' }}"
+        href={{ url('/movie/buyticket') }}>Buy</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-top border-dark container">
+    <div class="row">
+        <div class="my-3 col-lg-3">
+            <img src={{ asset('/images/movieAssets/Avengers_Endgame_poster.jpg') }} class="ms-2 img-fluid"
+                alt="Responsive image">
+        </div>
+        <div class="my-3 col-lg-6">
+            <h1>Avenger Endgame</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eligendi id eos? Debitis iusto minus
+                in voluptatem, reprehenderit nihil saepe repellendus perspiciatis animi quod magnam ducimus qui, harum
+                cumque quasi?
+            </p>
+        </div>
+        <div class="mt-3 col-lg-3">
+            <p>14, Maret 2023</p>
+            <p>Rp. 170.000</p>
+            <div class="row justify-content-md-center">
+                <a type="button"
+                    class="col-lg-6 btn btn-outline-dark {{ request()->segment(2) == 'movie' ? 'active' : '' }}"
+                    href={{ url('/movie/buyticket') }}>Buy</a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

@@ -22,6 +22,9 @@
             background-repeat: no-repeat;
             background-color: purple;
         }
+        .w-80{
+            width:67%;
+        }
     </style>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
