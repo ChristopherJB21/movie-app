@@ -1,61 +1,111 @@
 @extends('layouts.app')
 @section('content')
-        <div class="container">
-            <div class="row">
+    <div class="home-content" style="margin-top: 10px;">
+        <div class="promotion" style="margin: 30px; min-height: 160px">
+            <div class="promotion">
                 <div>
                     <a href="LinkPromo">
-                        <img src="images/movieAssets/PROMO 1.png" class="img-fluid" alt="Responsive image">
+                        <img src="images/movieAssets/KODE PROMO.png" class="img-fluid" alt="Responsive image">
                     </a>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="flex-column container">
-                <div class="row">
-                    <div class="my-3">
-                        <h1>New Arrival</h1>
-                        <div class="container">
-                            <div class="row">
-                              <div class="col-sm">
-                                <a href="">
-                                    <img src="images/movieAssets/anime-poster-K86JWC.jpg" class="img-fluid" alt="Responsive image">
-                                </a>
-                              </div>
-                              <div class="col-sm">
-                                <a href="">
-                                    <img src="images/movieAssets/anime-poster-K86JWC.jpg" class="img-fluid" alt="Responsive image">
-                                </a>
-                              </div>
-                              <div class="col-sm">
-                                <a href="">
-                                    <img src="images/movieAssets/anime-poster-K86JWC.jpg" class="img-fluid" alt="Responsive image">
-                                </a>
-                              </div>
-                            </div>
-                          </div>
+        <div class="background">
+            <img src="images/movieAssets/PROMOTION.png" style="max-height:500px; background: no-repeat" alt="">
+            <div class="text-center" >
+                <div class="text-center" >
+                    <div class="grid_movie">
+                    <a href="">
+                    <img src="images/movieAssets/THE FLASH.png" style="max-height:500px">
+                    </a>
+                    <div class="clearfix "> </div>
+                    <div class="title text-center">
+                        THE FLASH
+                    </div>
+                    <div class="button" style="margin: 20px;">
+                        <div class="btn-group-sm rating">
+                            <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                            <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <div class="heading-twenty bottom-margin-sm">
-                    <div class="select-twenty dark-twenty">
-                        <select class="custom-select" id="cityChanged" onchange="window.location=this.options[this.selectedIndex].value">
-                            <option data-id="1" value="">AMBON</option>
-                            <option data-id="2" value="">BALIKPAPAN</option>
-                            <option data-id="3" value="">BANDUNG</option>
-                            <option data-id="4" value="">BANJARMASIN</option>
-                            <option data-id="5" value="">BATAM</option>
-                            <option data-id="6" value="">BEKASI</option>
-                            <option data-id="7" value="">BENGKULU</option>
-                            <option data-id="8" value="">BOGOR</option>
-                            <option data-id="9" value="">CIANJUR</option>
-                        </select>
+
+        <div class="text-center" >
+            <div class="text-center" >
+                <div class="grid_movie">
+                <a href="">
+                <img src="images/movieAssets/THE FLASH.png" style="max-height:500px">
+                </a>
+                <div class="clearfix "> </div>
+                <div class="title text-center">
+                    THE FLASH
+                </div>
+                <div class="button" style="margin: 20px;">
+                    <div class="btn-group-sm rating">
+                        <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                        <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
                     </div>
-                    <input type="text" name="cinema-search" id="cinemaSearch" placeholder="Search...">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center" >
+            <div class="text-center" >
+                <div class="grid_movie">
+                <a href="">
+                <img src="images/movieAssets/THE CHILDE.jpg" style="max-height:500px">
+                </a>
+                <div class="clearfix "> </div>
+                <div class="title text-center">
+                    THE CHILDE
+                </div>
+                <div class="button" style="margin: 20px;">
+                    <div class="btn-group-sm rating">
+                        <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                        <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+        <div class="text-center" >
+            <div class="grid_movie">
+                <a href="">
+                <img src="images/movieAssets/TRANSFORMERS RISE OF THE BEASTS.jpg" style="max-height:500px">
+                </a>
+                <div class="clearfix "> </div>
+                <div class="title text-center">
+                    TRANSFORMERS: RISE OF THE BEASTS
+                </div>
+                <div class="button" style="margin: 20px;">
+                    <div class="btn-group-sm rating">
+                        <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                        <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center" >
+            <div class="grid_movie">
+                <a href="">
+                <img src="images/movieAssets/THE BOOGEYMAN.jpg" style="max-height:500px">
+                </a>
+                <div class="clearfix "> </div>
+                <div class="title text-center">
+                    THE BOOGEYMAN
+                </div>
+                <div class="button" style="margin: 20px;">
+                    <div class="btn-group-sm rating">
+                        <span class="btn btn-default btn-outline disabled" style="color: #005350;">2D</span>
+                        <a class="btn btn-default btn-outline disabled" style="color: #005350;">SU</a>
+                    </div>
                 </div>
             </div>
         </div>
