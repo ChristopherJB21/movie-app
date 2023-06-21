@@ -45,9 +45,7 @@ class UserController extends Controller
             return redirect('/');
         }
 
-        return response()->view('user.login', [
-            'error' => 'Email or password is wrong'
-        ]);
+        return redirect('/login');
     }
 
     public function register() : Response
