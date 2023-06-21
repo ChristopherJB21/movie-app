@@ -6,7 +6,7 @@
     @if (isset($isEdit))
         <form action={{url('/movie/editMovie/' . $movie->id)}} method="post" enctype="multipart/form-data" class="m-3 bg-white p-4">
     @else
-        <form action="movie/addMovie" method="post" enctype="multipart/form-data" class="m-3 bg-white p-4">
+        <form action={{url('/movie/addMovie')}} method="post" enctype="multipart/form-data" class="m-3 bg-white p-4">
     @endif
         @csrf
         <div class="row">

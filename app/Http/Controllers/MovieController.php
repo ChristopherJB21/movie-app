@@ -65,7 +65,9 @@ class MovieController extends Controller
                     $output .= url('/movie/deleteMovie' . $movie->id);
                     $output .= " type='button' class='mx-2 col-lg-4 btn btn-danger'>Delete</a>";
                 } else {
-                    $output .= "<button type='button' class='col-lg-10 btn btn-outline-dark'>Buy</button>";
+                    $output .= "<a href=";
+                    $output .= url('/tickets/movie/' . $movie->id);
+                    $output .= "><button type='button' class='col-lg-10 btn btn-outline-dark'>Buy</button></a>";
                 }
                 $output .= '</div>';
                 $output .= '</div>';

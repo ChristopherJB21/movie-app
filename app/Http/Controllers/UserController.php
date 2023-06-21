@@ -73,9 +73,7 @@ class UserController extends Controller
         $password = $request->input('txtPassword');
 
         if ($this->userService->register($email, $password, $firstName, $lastName, $phoneNumber)) {
-            return response()->view('user.register', [
-                'success' => 'Register Success',
-            ]);
+            return redirect('/');
         }
 
         return response()->view('user.register', [

@@ -33,6 +33,7 @@ class UserServiceImpl implements UserService
         $newUser->last_name = $lastName;
         $newUser->password = Hash::make($password);
         $newUser->phone_number = $phoneNumber;
+        $newUser->role_id = 2;
         $newUser->remember_token = Str::random(10);
         $newUser->save();
 
