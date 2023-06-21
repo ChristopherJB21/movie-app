@@ -31,9 +31,15 @@
                                     @foreach ($cinemas[$idxI]->movies[$idxJ]->tickets as $idxK => $ticket)
                                         <div class="col-lg-4 text-center">
                                             <a href={{ url('/ticket/buyticket/' . $ticket->id ) }}><button type="button" class="my-1 btn btn-primary">
-                                                {{date("l, d F Y", strtotime($ticket->date))}} <br>
-                                                {{date("H:i", strtotime($ticket->time))}} <br>
-                                                Rp. {{$ticket->price}},00
+                                                <div class="col-lg-12">
+                                                    {{date("d F Y", strtotime($ticket->date))}}
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    {{date("H:i", strtotime($ticket->time))}}
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    Rp. {{$ticket->price}},00
+                                                </div>
                                             </button></a>
                                         </div>
                                     @endforeach
