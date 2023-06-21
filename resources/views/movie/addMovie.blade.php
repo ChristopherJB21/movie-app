@@ -72,9 +72,9 @@
         @else
             <button type="submit" class="mt-3 btn btn-purple">Add Movie</button>
         @endif
-        <a href={{ url('/movie/deleteMovie') }} type="button"
+        {{-- <a href={{ url('/movie/deleteMovie') }} type="button"
             class="mt-3 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Delete Movie</a>
         <a href={{ url('/movie') }} type="button"
-            class="mt-3 btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a>
+            class="mt-3 btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a> --}}
     </form>
 @endsection
