@@ -23,7 +23,7 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/about/contactUs', 'contactUs');
     Route::get('/about/aboutUs', 'aboutUs');
     Route::get('/profile', 'profile');
-    Route::put('/profile', 'doUpdateProfile');
+    Route::post('/profile/{id}', 'doUpdateProfile');
 });
 
 Route::controller(UserController::class)->group(function(){

@@ -39,6 +39,20 @@ class UserServiceImpl implements UserService
         return true;
 	}
 
+    public function updateProfile ($id, string $email, string $firstName, string $lastName, string $phoneNumber) : bool
+    {
+        $newUser = User::where('id', $id)->first();
+
+        $newUser->email = $email;
+        $newUser->first_name = $firstName;
+        $newUser->last_name = $lastName;
+        $newUser->phone_number = $phoneNumber;
+        
+        $newUser->save();
+
+        return true;
+	}
+
     public function getIDUserByEmail (string $email) : string
     {
         $user = User::where('email', $email)->first();
