@@ -41,7 +41,7 @@
                                 <div class="row justify-content-md-center">
                                     <a href={{ url('/movie/editMovie/' . $movie->id) }} type="button"
                                         class="mx-2 col-lg-4 btn btn-primary">Edit</a>
-                                    <a href={{ url('/movie/deleteMovie') }} type="button"
+                                    <a href={{ url('/movie/deleteMovie/' . $movie->id) }} type="button"
                                         class="mx-2 col-lg-4 btn btn-danger">Delete</a>
                                 </div>
                             @else

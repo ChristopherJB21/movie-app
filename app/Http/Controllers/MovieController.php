@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\MovieRequest;
 use App\Services\MovieService;
 use App\Services\UserService;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -121,6 +122,7 @@ class MovieController extends Controller
     public function editMovie($id) : Response
     {
         $movie = $this->movieService->getMovieByID($id);
+        $movie = $movie[0];
         return response()->view('movie.addMovie', [
             'movie' => $movie,
             'isEdit' => 1
@@ -139,16 +141,34 @@ class MovieController extends Controller
         $MovieSinopsis = $request->input('txtMovieSinopsis');
         $MoviePoster = $request->file("filemovieposter");
 
-        $this->movieService->UpdateMovie($id, $MovieName, $MovieSinopsis, $MoviePoster);
+        $oldMovie = $this->movieService->getMovieByID($id);
+        $oldMovie = $oldMovie[0];
+
+        if ($MoviePoster != null)
+        {
+            $DirUpload = "images/moviePoster";
+    
+            $NameMoviePoster = time() . "_" . $MovieName;
+            $PathMovie = $DirUpload . "/" . $NameMoviePoster;
+    
+            $MoviePoster->move($DirUpload, $NameMoviePoster);
+        }
+        else
+        {
+            $PathMovie = $oldMovie->poster;
+        }
+
+        $this->movieService->UpdateMovie($id, $MovieName, $MovieSinopsis, $PathMovie);
 
         $movies = $this->movieService->getListMovieByTitle('');
         return response()->view('movie.movieManagement', [
             'movies' => $movies
         ]);
     }
-    public function deleteMovie() : Response
+    public function deleteMovie($id) : RedirectResponse
     {
-        return response()->view('movie.deleteMovie');
+        $this->movieService->DeleteMovie($id);
+        return redirect('/movie');
     }
     public function buyMovie() : Response
     {
