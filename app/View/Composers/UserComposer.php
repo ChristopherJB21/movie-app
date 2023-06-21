@@ -23,5 +23,6 @@ class UserComposer
     public function compose(View $view): void
     {
         $view->with('UserRole', $this->userService->getUserRole());
+        $view->with('User', $this->userService->getUserProfile());
     }
 }

@@ -46,7 +46,7 @@
                                 </div>
                             @else
                                 <div class="row justify-content-md-center">
-                                    <button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button>
+                                    <a href={{url('/tickets/movie/' . $movie->id)}}><button type="button" class="col-lg-10 btn btn-outline-dark">Buy</button></a>
                                 </div>
                             @endif
                         </div>
