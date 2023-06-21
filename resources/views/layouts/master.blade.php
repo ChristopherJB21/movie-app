@@ -18,6 +18,17 @@
             font-family: 'Nunito';
             background-color: #ffe1ee;
         }
+        .w-20{
+            width:20%;
+        }
+        .line{
+            width:2px;
+            height: 2rem;
+            background-color:00000;
+        }
+        .bg-borderPayment{
+            background-color: #BFBFBF;
+        }
     </style>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
