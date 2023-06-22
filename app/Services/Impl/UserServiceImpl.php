@@ -33,7 +33,22 @@ class UserServiceImpl implements UserService
         $newUser->last_name = $lastName;
         $newUser->password = Hash::make($password);
         $newUser->phone_number = $phoneNumber;
+        $newUser->role_id = 2;
         $newUser->remember_token = Str::random(10);
+        $newUser->save();
+
+        return true;
+	}
+
+    public function updateProfile ($id, string $email, string $firstName, string $lastName, string $phoneNumber) : bool
+    {
+        $newUser = User::where('id', $id)->first();
+
+        $newUser->email = $email;
+        $newUser->first_name = $firstName;
+        $newUser->last_name = $lastName;
+        $newUser->phone_number = $phoneNumber;
+        
         $newUser->save();
 
         return true;

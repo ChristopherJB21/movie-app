@@ -29,9 +29,9 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item {{ request()->segment(2) == 'buyticket' ? 'active' : '' }}"
-                                    href={{ url('/about/aboutUs') }}>Buy Ticket</a></li>
+                                    href={{ url('/tickets/movie') }}>Buy Ticket</a></li>
                             <li><a class="dropdown-item {{ request()->segment(2) == 'myticket' ? 'active' : '' }}"
-                                    href={{ url('/about/contactUs') }}>My Ticket</a></li>
+                                    href={{ url('/tickets/myticket') }}>My Ticket</a></li>
                         </ul>
                     </li>
                 @endif

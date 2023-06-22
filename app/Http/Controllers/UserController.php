@@ -45,9 +45,7 @@ class UserController extends Controller
             return redirect('/');
         }
 
-        return response()->view('user.login', [
-            'error' => 'Email or password is wrong'
-        ]);
+        return redirect('/login');
     }
 
     public function register() : Response
@@ -73,9 +71,7 @@ class UserController extends Controller
         $password = $request->input('txtPassword');
 
         if ($this->userService->register($email, $password, $firstName, $lastName, $phoneNumber)) {
-            return response()->view('user.register', [
-                'success' => 'Register Success',
-            ]);
+            return redirect('/');
         }
 
         return response()->view('user.register', [

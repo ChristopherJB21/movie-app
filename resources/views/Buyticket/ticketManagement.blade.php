@@ -17,23 +17,30 @@
                         <h6>{{ $cinema->address }}</h6>
                         <h6>{{ $cinema->telp }}</h6>
 
-                        <hr class="border border-dark">
-
                         @foreach ($cinemas[$idxI]->movies as $idxJ => $movie)
+                            <hr class="border border-dark">
+                            <div class="my-1 col-lg-12">
+                                <h3><b>{{ $cinemas[$idxI]->movies[$idxJ]->title }}</b></h3>
+                            </div>
                             <div class="row">
                                 <div class="my-1 col-lg-3 text-center">
                                     <img src={{ asset($cinemas[$idxI]->movies[$idxJ]->poster) }} class="mx-auto img-fluid d-block"
                                         alt="Responsive image">
-                                    <h5>{{ $cinemas[$idxI]->movies[$idxJ]->title }}</h5>
                                 </div>
                                 <div class="row col-lg-9">
                                     @foreach ($cinemas[$idxI]->movies[$idxJ]->tickets as $idxK => $ticket)
-                                        <div class="col-lg-4 text-center">
-                                            <button type="button" class="my-1 btn btn-primary">
-                                                {{date("l, d F Y", strtotime($ticket->date))}} <br>
-                                                {{date("H:i", strtotime($ticket->time))}} <br>
-                                                Rp. {{$ticket->price}},00
-                                            </button>
+                                        <div class="d-flex col-lg-2 justify-content-lg-between align-items-center">
+                                            <a href={{ url('/ticket/buyticket/' . $ticket->id ) }}><button type="button" class="btn btn-primary">
+                                                <div class="">
+                                                    {{date("d F Y", strtotime($ticket->date))}}
+                                                </div>
+                                                <div class="">
+                                                    {{date("H:i", strtotime($ticket->time))}}
+                                                </div>
+                                                <div class="">
+                                                    Rp. {{$ticket->price}},00
+                                                </div>
+                                            </button></a>
                                         </div>
                                     @endforeach
                                 </div>

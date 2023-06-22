@@ -25,7 +25,7 @@ class ProfileRequest extends FormRequest
             'txtFirstName' => 'required|max:255',
             'txtLastName' => 'required|max:255',
             'txtPhoneNumber' => 'required',
-            'txtEmailAddress' => 'required|unique:users,email|max:255',
+            'txtEmailAddress' => 'required|unique:ms_users,email|max:255',
             'txtPassword' => 'required|min:8',
             'txtConfirmPassword' => 'required_with:txtPassword|same:txtPassword|min:8'
         ];

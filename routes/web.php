@@ -23,7 +23,7 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/about/contactUs', 'contactUs');
     Route::get('/about/aboutUs', 'aboutUs');
     Route::get('/profile', 'profile');
-    Route::put('/profile', 'doUpdateProfile');
+    Route::post('/profile/{id}', 'doUpdateProfile');
 });
 
 Route::controller(UserController::class)->group(function(){
@@ -41,12 +41,7 @@ Route::controller(MovieController::class)->group(function(){
     Route::post('/movie/addMovie', 'insertmovie');
     Route::get('/movie/editMovie/{id}', 'editmovie');
     Route::post('/movie/editMovie/{id}', 'updatemovie');
-    Route::get('/movie/deleteMovie', 'deletemovie');
-    Route::get('/movie/buyMovie', 'buymovie');
-    Route::get('/movie/buyMovie/payment', 'payment');
-    Route::get('/movie/buyticket', 'Buyticket');
-
-    // Route::get('/tickets', 'tickets');
+    Route::get('/movie/deleteMovie/{id}', 'deletemovie');
 });
 
 Route::controller(CinemasController::class)->group(function(){
@@ -55,6 +50,10 @@ Route::controller(CinemasController::class)->group(function(){
 });
 
 Route::controller(BuyTicketController::class)->group(function(){
+    Route::get('/tickets/movie/', 'tickets');
     Route::get('/tickets/movie/{idMovie}', 'ticketsMovie');
-    Route::get('/tickets/movie/{idCinema}', 'ticketsCinema');
+    Route::get('/tickets/cinema/{idCinema}', 'ticketsCinema');
+    Route::get('/ticket/buyticket/{idTicket}', 'buyTicket');
+    Route::post('/ticket/buyticket', 'buy');
+    Route::get('/tickets/myticket', 'myTicket');
 });

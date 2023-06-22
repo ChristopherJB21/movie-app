@@ -13,4 +13,12 @@ class CinemaServiceImpl implements CinemaService
         
         return $cinemas;
     }
+
+    function getCinemaByID(string $id)
+    {
+        $cinemas = Cinemas::where('id', $id)->first();
+
+        return collect([$cinemas]);
+
+    }
 }

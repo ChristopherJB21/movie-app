@@ -49,12 +49,20 @@ class MovieServiceImpl implements MovieService
 
     function UpdateMovie($id, string $MovieName, string $MovieSinopsis, string $PathMovie) : bool
     {
-        $movies = Movie::where('id', $id);
+        $movies = Movie::where('id', $id)->first();
  
         $movies->title = $MovieName;
         $movies->sinopsis = $MovieSinopsis;
         $movies->poster = $PathMovie;
         $movies->save();
+
+        return true;
+    }
+
+    function DeleteMovie($id) : bool
+    {
+        $movies = Movie::where('id', $id)->first();
+        $movies->delete();
 
         return true;
     }

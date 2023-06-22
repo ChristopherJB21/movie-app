@@ -32,7 +32,7 @@
                         <hr>
 
                         <div class="row text-center">
-                            <a href=""><button type="button" class="col-lg-10 btn btn-outline-dark">Buy ticket in
+                            <a href={{ url('/tickets/cinema/' . $cinema->id) }}><button type="button" class="col-lg-10 btn btn-outline-dark">Buy ticket in
                                     here</button></a>
                         </div>
                     </div>

@@ -6,7 +6,7 @@
     @if (isset($isEdit))
         <form action={{url('/movie/editMovie/' . $movie->id)}} method="post" enctype="multipart/form-data" class="m-3 bg-white p-4">
     @else
-        <form action="movie/addMovie" method="post" enctype="multipart/form-data" class="m-3 bg-white p-4">
+        <form action={{url('/movie/addMovie')}} method="post" enctype="multipart/form-data" class="m-3 bg-white p-4">
     @endif
         @csrf
         <div class="row">
@@ -72,9 +72,9 @@
         @else
             <button type="submit" class="mt-3 btn btn-purple">Add Movie</button>
         @endif
-        <a href={{ url('/movie/deleteMovie') }} type="button"
+        {{-- <a href={{ url('/movie/deleteMovie') }} type="button"
             class="mt-3 btn btn-danger {{ request()->segment(2) == 'movie' ? 'active' : '' }}">Delete Movie</a>
         <a href={{ url('/movie') }} type="button"
-            class="mt-3 btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a>
+            class="mt-3 btn btn-primary {{ request()->segment(1) == 'movie' ? 'active' : '' }}">View Movie</a> --}}
     </form>
 @endsection

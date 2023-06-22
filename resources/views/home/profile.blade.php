@@ -11,9 +11,8 @@
                         <p class="h5">Update Your Profile</p>
                     </div>
                     <div class="col-lg-12 text-center mt-3">
-                        <form action="/profile" method="post">
+                        <form action={{ url('/profile/' . $user->id) }} method="post">
                             @csrf
-                            @method('PUT')
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="input-group px-5 py-3">
@@ -49,23 +48,6 @@
                                             value="{{ old('txtPhoneNumber', $user->phone_number) }}">
                                         <div class="invalid-feedback">
                                             @error('txtPhoneNumber')
-                                                {{ $message }}
-                                            @enderror
-                                        </div>
-                                    </div>
-                                    <div class="input-group px-5 py-3">
-                                        <span class="input-group-text input-purple bg-purple">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
-                                            </svg>
-                                        </span>
-                                        <input type="password"
-                                            class="form-control input-purple @error('txtPassword') is-invalid @enderror"
-                                            name="txtPassword" id="txtPassword" placeholder="Password">
-                                        <div class="invalid-feedback">
-                                            @error('txtPassword')
                                                 {{ $message }}
                                             @enderror
                                         </div>
@@ -107,24 +89,6 @@
 
                                         <div class="invalid-feedback">
                                             @error('txtEmailAddress')
-                                                {{ $message }}
-                                            @enderror
-                                        </div>
-                                    </div>
-                                    <div class="input-group px-5 py-3">
-                                        <span class="input-group-text input-purple bg-purple">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
-                                            </svg>
-                                        </span>
-                                        <input type="password"
-                                            class="form-control input-purple @error('txtConfirmPassword') is-invalid @enderror"
-                                            name="txtConfirmPassword" id="txtConfirmPassword"
-                                            placeholder="Confirm Password">
-                                        <div class="invalid-feedback">
-                                            @error('txtConfirmPassword')
                                                 {{ $message }}
                                             @enderror
                                         </div>

@@ -12,4 +12,5 @@ interface MovieService
     function getOneMovie ();
     function InsertMovie (string $MovieName, string $MovieSinopsis, string $PathMovie) : bool;
     function UpdateMovie($id, string $MovieName, string $MovieSinopsis, string $PathMovie) : bool;
+    function DeleteMovie($id) : bool;
 }
